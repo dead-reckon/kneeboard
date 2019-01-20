@@ -170,16 +170,14 @@ def plane_meta(info,search_list):
 
 
 
+content = forum_scrape(html)
 
-# Generate Log of Plane list on exectuion
-# generate_log(forum_scrape(html))
+plane_meta(content,list_meta)
 
-plane_meta(forum_scrape(html),list_meta)
+# op_features(content)
 
-op_features(forum_scrape(html))
+# oil_water_temp(content)
 
-oil_water_temp(forum_scrape(html))
+# engine_settings(content,list_engine)
 
-engine_settings(forum_scrape(html),list_engine)
-
-airspeed(forum_scrape(html))
+# airspeed(content)
