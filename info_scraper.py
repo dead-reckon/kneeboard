@@ -148,10 +148,18 @@ def oil_water_temp(info):
     for line in info:
         if re.search("## ",line):
             file.write("\n" + line)
-        elif re.match('Oil cap', line):
-            pass
-        elif re.match('Oil', line) or re.match('Water', line):
+        # elif re.match('Oil cap', line):
+        #     pass
+        elif re.search('maximum temperature', line):
+            # if re.search('intake', line):
+            #     pass
+            # else:
             file.write("\n" + line)
+        # elif re.match('Oil', line) or re.match('Water', line):
+        #     if re.search('max', line):
+        #         file.write("\n" + line)
+        #     else:
+        #         pass
     file.close()
 
 def plane_meta(info,search_list):
@@ -174,10 +182,10 @@ content = forum_scrape(html)
 
 plane_meta(content,list_meta)
 
-# op_features(content)
+op_features(content)
 
-# oil_water_temp(content)
+oil_water_temp(content)
 
-# engine_settings(content,list_engine)
+engine_settings(content,list_engine)
 
-# airspeed(content)
+airspeed(content)
