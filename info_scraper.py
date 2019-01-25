@@ -5,10 +5,50 @@ from contextlib import closing
 from bs4 import BeautifulSoup
 import re
 
+# Right now this just generates markdown files for reference.  Eventually going to use this to pipe data into an django postgres DB.
+
 # Beautiful Soup Object
 raw_html = open('source.html',encoding="utf8").read()   
 html = BeautifulSoup(raw_html, 'html.parser')
     
+# Lists used for table/list generation and filtering.
+list_meta = [ "Takeoff speed", 
+            "Glideslope speed", 
+            "Landing speed" , 
+            "Service ceiling", 
+            "Dive speed limit",
+            "Climb rate at sea level",
+            "Climb rate at 3000 m",
+            "Climb rate at 6000 m",
+            "Flight endurance at 3000 m",
+            "Fuel load",
+            "Supercharger",
+            "Indicated stall speed",
+            "Maximum performance turn"]
+
+list_engine = [ "Nominal",
+                "Combat power",
+                "Emergency power",
+                "Boosted power",
+                "Take-off power",
+                "Max Cruising power",
+                "International power",
+                "Emergency Max All",
+                "Climb power",
+                "Model"]
+
+list_speed = [ "Nominal",
+                "Combat power",
+                "Emergency power",
+                "Boosted power",
+                "Take-off power",
+                "Max Cruising power",
+                "International power",
+                "Emergency Max All",
+                "Climb power",
+                "Model"]
+
+
 
 def forum_scrape(html):
     # This Function takes a Beuatifulsoup html object and returns a clean list
@@ -66,42 +106,6 @@ def forum_scrape(html):
 
     # Return the Final list
     return l_final
-
-list_meta = [ "Takeoff speed", 
-            "Glideslope speed", 
-            "Landing speed" , 
-            "Service ceiling", 
-            "Dive speed limit",
-            "Climb rate at sea level",
-            "Climb rate at 3000 m",
-            "Climb rate at 6000 m",
-            "Flight endurance at 3000 m",
-            "Fuel load",
-            "Supercharger",
-            "Indicated stall speed",
-            "Maximum performance turn"]
-
-list_engine = [ "Nominal",
-                "Combat power",
-                "Emergency power",
-                "Boosted power",
-                "Take-off power",
-                "Max Cruising power",
-                "International power",
-                "Emergency Max All",
-                "Climb power",
-                "Model"]
-
-list_speed = [ "Nominal",
-                "Combat power",
-                "Emergency power",
-                "Boosted power",
-                "Take-off power",
-                "Max Cruising power",
-                "International power",
-                "Emergency Max All",
-                "Climb power",
-                "Model"]
 
 def engine_settings(info, search_list):
     file = open("engine.md", "w")
