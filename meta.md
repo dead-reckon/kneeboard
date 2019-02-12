@@ -14,7 +14,11 @@ Takeoff speed: 145..175 km/h
 Glideslope speed: 185..195 km/h
 Landing speed: 135..145 km/h
 Supercharger gear shift altitude: 3000 m
+Empty weight: 1501 kg
+Minimum weight (no ammo, 10% fuel): 1633 kg
+Maximum takeoff weight: 2146 kg
 Fuel load: 191 kg / 260 l
+Useful load: 645 kg
 ## MiG-3 series 24
 Indicated stall speed in flight configuration: 159..175 km/h
 Indicated stall speed in takeoff/landing configuration: 134..147 km/h
@@ -30,7 +34,11 @@ Takeoff speed: 180..200 km/h
 Glideslope speed: 195..205 km/h
 Landing speed: 135..145 km/h
 Supercharger gear shift altitude: single gear
+Empty weight: 2650 kg
+Minimum weight (no ammo, 10% fuel): 2831 kg
+Maximum takeoff weight: 3476 kg
 Fuel load: 352 kg / 480 l
+Useful load: 826 kg
 ## Il-2 model of 1941
 Indicated stall speed in flight configuration: 136..156 km/h
 Indicated stall speed in takeoff/landing configuration: 128..146 km/h
@@ -46,7 +54,11 @@ Takeoff speed: 150..190 km/h
 Glideslope speed: 185..195 km/h
 Landing speed: 130..140 km/h
 Supercharger gear shift altitude: single gear
+Empty weight: 4242 kg
+Minimum weight (no ammo, 10% fuel): 4464 kg
+Maximum takeoff weight: 5888 kg
 Fuel load: 470 kg / 641 l
+Useful load: 1646 kg
 ## Pe-2 series 35
 Indicated stall speed in flight configuration: 175..200 km/h
 Indicated stall speed in takeoff/landing configuration: 148..169 km/h
@@ -62,7 +74,11 @@ Takeoff speed: 160..200 km/h
 Glideslope speed: 220..240 km/h
 Landing speed: 155..165 km/h
 Supercharger gear shift altitude: 2700 m
+Empty weight: 6078 kg
+Minimum weight (no ammo, 10% fuel): 6640 kg
+Maximum takeoff weight: 8712 kg
 Fuel load: 1129 kg / 1505 l
+Useful load: 2634 kg
 ## Bf 109 E-7
 Indicated stall speed in flight configuration: 152..159 km/h
 Indicated stall speed in takeoff/landing configuration: 147..146 km/h
@@ -78,7 +94,11 @@ Takeoff speed: 140..170 km/h
 Glideslope speed: 180..190 km/h
 Landing speed: 130..140 km/h
 Supercharger gear shift altitude: fluid coupling
+Empty weight: 2049 kg
+Minimum weight (no ammo, 10% fuel): 2340 kg
+Maximum takeoff weight: 2893 kg
 Fuel load: 304 kg / 400 l
+Useful load: 844 kg
 ## Bf 109 F-2
 Indicated stall speed in flight configuration: 151..168 km/h
 Indicated stall speed in takeoff/landing configuration: 144 km/h..159 km/h
@@ -94,7 +114,11 @@ Takeoff speed: 145..175 km/h
 Glideslope speed: 185..195 km/h
 Landing speed: 135..145 km/h
 Supercharger gear shift altitude: fluid coupling
+Empty weight: 2171 kg
+Minimum weight (no ammo, 10% fuel): 2445 kg
+Maximum takeoff weight: 3092 kg
 Fuel load: 304 kg / 400 l
+Useful load: 921 kg
 ## Bf 110 E-2
 Indicated stall speed in flight configuration: 148..182 km/h
 Indicated stall speed in takeoff/landing configuration: 131..162 km/h
@@ -110,7 +134,11 @@ Takeoff speed: 180..220 km/h
 Glideslope speed: 200..220 km/h
 Landing speed: 140..160 km/h
 Supercharger gear shift altitude: fluid coupling
+Empty weight: 5175 kg
+Minimum weight (no ammo, 10% fuel): 5597 kg
+Maximum takeoff weight: 8398 kg
 Fuel load: 965 kg / 1270 l
+Useful load: 3223 kg
 ## Ju 88 A-4
 Indicated stall speed in flight configuration: 188..205 km/h
 Indicated stall speed in takeoff/landing configuration: 158..185 km/h
@@ -126,7 +154,11 @@ Takeoff speed: 170..210 km/h
 Glideslope speed: 210..220 km/h
 Landing speed: 150..160 km/h
 Supercharger gear shift altitude: automatic
+Empty weight: 8619 kg
+Minimum weight (no ammo, 10% fuel): 9458 kg
+Maximum takeoff weight: 13655 kg
 Fuel load: 1277 kg / 1680 l
+Useful load: 5036 kg
 ## LaGG-3 series 29
 Indicated stall speed in flight configuration: 163..189 km/h
 Indicated stall speed in takeoff/landing configuration: 138..168 km/h
@@ -142,7 +174,11 @@ Takeoff speed: 165..200 km/h
 Glideslope speed: 200..210 km/h
 Landing speed: 140..160 km/h
 Supercharger gear shift altitude: 2500 m
+Empty weight: 2620 kg
+Minimum weight (no ammo, 10% fuel): 2773 kg
+Maximum takeoff weight: 3701 kg
 Fuel load: 348 kg / 467 l
+Useful load: 1081 kg
 ## Yak-1 series 69
 Indicated stall speed in flight configuration: 155..171 km/h
 Indicated stall speed in takeoff/landing configuration: 133..146 km/h
@@ -158,7 +194,11 @@ Takeoff speed: 160..190 km/h
 Glideslope speed: 195..205 km/h
 Landing speed: 135..145 km/h
 Supercharger gear shift altitude: 2300 m
+Empty weight: 2365 kg
+Minimum weight (no ammo, 10% fuel): 2583 kg
+Maximum takeoff weight: 3170 kg
 Fuel load: 304 kg / 408 l
+Useful load: 805 kg
 ## Il-2 model of 1942
 Indicated stall speed in flight configuration: 138..158 km/h
 Indicated stall speed in takeoff/landing configuration: 130..148 km/h
@@ -174,7 +214,11 @@ Takeoff speed: 150..190 km/h
 Glideslope speed: 185..195 km/h
 Landing speed: 135..145 km/h
 Supercharger gear shift altitude: single gear
+Empty weight: 4462 kg
+Minimum weight (no ammo, 10% fuel): 4651 kg
+Maximum takeoff weight: 6127 kg
 Fuel load: 535 kg / 730 l
+Useful load: 1665 kg
 ## Pe-2 series 87
 Indicated stall speed in flight configuration: 175..200 km/h
 Indicated stall speed in takeoff/landing configuration: 148..169 km/h
@@ -190,7 +234,11 @@ Takeoff speed: 160..200 km/h
 Glideslope speed: 220..240 km/h
 Landing speed: 155..165 km/h
 Supercharger gear shift altitude: 2300 m
+Empty weight: 6089 kg
+Minimum weight (no ammo, 10% fuel): 6643 kg
+Maximum takeoff weight: 8701 kg
 Fuel load: 1113 kg / 1484 l
+Useful load: 2612 kg
 ## Bf 109 F-4
 Indicated stall speed in flight configuration: 154..171 km/h
 Indicated stall speed in takeoff/landing configuration: 148..161 km/h
@@ -206,7 +254,11 @@ Takeoff speed: 150..180 km/h
 Glideslope speed: 190..200 km/h
 Landing speed: 145..155 km/h
 Supercharger gear shift altitude: fluid coupling
+Empty weight: 2382 kg
+Minimum weight (no ammo, 10% fuel): 2545 kg
+Maximum takeoff weight: 3189 kg
 Fuel load: 304 kg / 400 l
+Useful load: 807 kg
 ## Bf 109 G-2
 Indicated stall speed in flight configuration: 158..174 km/h
 Indicated stall speed in takeoff/landing configuration: 153..164 km/h
@@ -222,7 +274,11 @@ Takeoff speed: 155..180 km/h
 Glideslope speed: 195..205 km/h
 Landing speed: 150..155 km/h
 Supercharger gear shift altitude: fluid coupling
+Empty weight: 2486 kg
+Minimum weight (no ammo, 10% fuel): 2649 kg
+Maximum takeoff weight: 3283 kg
 Fuel load: 304 kg / 400 l
+Useful load: 797 kg
 ## Ju 87 D-3
 Indicated stall speed in flight configuration: 137..176 km/h
 Indicated stall speed in takeoff/landing configuration: 123..155 km/h
@@ -238,7 +294,11 @@ Takeoff speed: 140..170 km/h
 Glideslope speed: 180..195 km/h
 Landing speed: 125..145 km/h
 Supercharger gear shift altitude: automatic
+Empty weight: 3930 kg
+Minimum weight (no ammo, 10% fuel): 4250 kg
+Maximum takeoff weight: 6684 kg
 Fuel load: 626 kg / 840 l
+Useful load: 2754 kg
 ## He 111 H-6
 Indicated stall speed in flight configuration: 150..184 km/h
 Indicated stall speed in takeoff/landing configuration: 123..151 km/h
@@ -254,7 +314,11 @@ Takeoff speed: 170..210 km/h
 Glideslope speed: 180..200 km/h
 Landing speed: 125..150 km/h
 Supercharger gear shift altitude: automatic
+Empty weight: 8963 kg
+Minimum weight (no ammo, 10% fuel): 9946 kg
+Maximum takeoff weight: 15239 kg
 Fuel load: 3214 kg / 4285 l
+Useful load: 6276 kg
 ## Yak-7B series 36
 Indicated stall speed in flight configuration: 155..172 km/h
 Indicated stall speed in takeoff/landing configuration: 139..154 km/h
@@ -270,7 +334,11 @@ Takeoff speed: 170..175 km/h
 Glideslope speed: 200 km/h
 Landing speed: 145..165 km/h
 Supercharger gear shift altitude: 2000 m
+Empty weight: 2302 kg
+Minimum weight (no ammo, 10% fuel): 2630 kg
+Maximum takeoff weight: 3229 kg
 Fuel load: 305 kg / 420 l
+Useful load: 927 kg
 ## P-39L-1
 Indicated stall speed in flight configuration: 160..172 km/h
 Indicated stall speed in takeoff/landing configuration: 140..151 km/h
@@ -286,7 +354,11 @@ Takeoff speed: 150..180 km/h
 Glideslope speed: 180..210 km/h
 Landing speed: 155..160 km/h
 Supercharger gear shift altitude: single gear
+Empty weight: 2929 kg
+Minimum weight (no ammo, 10% fuel): 3331 kg
+Maximum takeoff weight: 3868 kg
 Fuel load: 326,9 kg / 454 l
+Useful load: 939 kg
 ## Il-2 model of 1943
 Indicated stall speed in flight configuration: 144..159 km/h
 Indicated stall speed in takeoff/landing configuration: 135..152 km/h
@@ -301,7 +373,11 @@ Takeoff speed: 160..200 km/h
 Glideslope speed: 195..205 km/h
 Landing speed: 145..155 km/h
 Supercharger gear shift altitude: single gear
+Empty weight: 4715 kg
+Minimum weight (no ammo, 10% fuel): 5014 kg
+Maximum takeoff weight: 6375 kg
 Fuel load: 535 kg / 730 l
+Useful load: 1660 kg
 ## A-20B
 Indicated stall speed in flight configuration: 161..193 km/h (100..120 mph)
 Indicated stall speed in takeoff/landing configuration: 139..166 km/h (86..103 mph)
@@ -317,7 +393,11 @@ Takeoff speed: 170..195 km/h (105..120 mph)
 Glideslope speed: 185..225 km/h (115..140 mph)
 Landing speed: 150..170 km/h (95..105 mph)
 Supercharger gear shift altitude: 2900 m (9500 ft)
+Empty weight: 6781 kg
+Minimum weight (no ammo, 10% fuel): 7359 kg
+Maximum takeoff weight: 10466 kg
 Fuel load: 1057 kg / 1468 l / 388 gal
+Useful load: 3665 kg
 ## Bf 109 G-4
 Indicated stall speed in flight configuration: 165..175 km/h
 Indicated stall speed in takeoff/landing configuration: 154..167 km/h
@@ -333,7 +413,11 @@ Takeoff speed: 155..180 km/h
 Glideslope speed: 195..205 km/h
 Landing speed: 150..155 km/h
 Supercharger gear shift altitude: fluid coupling
+Empty weight: 2506 kg
+Minimum weight (no ammo, 10% fuel): 2669 kg
+Maximum takeoff weight: 3303 kg
 Fuel load: 304 kg / 400 l
+Useful load: 797 kg
 ## Fw 190 A-5
 Indicated stall speed in flight configuration: 169..195 km/h
 Indicated stall speed in takeoff/landing configuration: 160..175 km/h
@@ -349,7 +433,11 @@ Takeoff speed: 170..210 km/h
 Glideslope speed: 205..215 km/h
 Landing speed: 160..170 km/h
 Supercharger gear shift altitude: automatic
+Empty weight: 3219 kg
+Minimum weight (no ammo, 10% fuel): 3401 kg
+Maximum takeoff weight: 4648 kg
 Fuel load: 409 kg / 524 l
+Useful load: 1429 kg
 ## Bf 110 G-2
 Indicated stall speed in flight configuration: 160..190 km/h
 Indicated stall speed in takeoff/landing configuration: 141..168 km/h
@@ -365,7 +453,11 @@ Takeoff speed: 190..230 km/h
 Glideslope speed: 210..230 km/h
 Landing speed: 150..170 km/h
 Supercharger gear shift altitude: fluid coupling
+Empty weight: 5905 kg
+Minimum weight (no ammo, 10% fuel): 6335 kg
+Maximum takeoff weight: 8928 kg
 Fuel load: 1003 kg / 1270 l
+Useful load: 3023 kg
 ## He 111 H-16
 Indicated stall speed in flight configuration: 150..194 km/h
 Indicated stall speed in takeoff/landing configuration: 123..156 km/h
@@ -381,7 +473,11 @@ Takeoff speed: 170..210 km/h
 Glideslope speed: 180..200 km/h
 Landing speed: 125..150 km/h
 Supercharger gear shift altitude: automatic
+Empty weight: 8698 kg
+Minimum weight (no ammo, 10% fuel): 9831 kg
+Maximum takeoff weight: 15689 kg
 Fuel load: 2553 kg / 3450 l
+Useful load: 6991 kg
 ## Spitfire Mk.IXe
 Indicated stall speed in flight configuration: 143...163 km/h
 Indicated stall speed in takeoff/landing configuration: 135...154 km/h
@@ -403,6 +499,8 @@ Takeoff speed: 185..195 km/h
 Glideslope speed: 165..185 km/h
 Landing speed: 150..155 km/h
 Supercharger gear shift altitude: automatic with possibility of manual switch to low gear
+Empty weight: 2530 kg
+Minimum weight (no ammo, 10% fuel): 2977 kg
 Fuel load: 274 kg / 386 l / 85 gallons
 ## P-47D-28
 Indicated stall speed in flight configuration: 178..222 km/h (111..138 mph)
@@ -422,7 +520,11 @@ Takeoff speed: 185..200 km/h (115..125 mph)
 Glideslope speed: 185..210 km/h (115..130 mph)
 Landing speed: 175..195 km/h (110..120 mph)
 Supercharger gear shift altitude: single gear
+Empty weight: 4755 kg (10483 lb)
+Minimum weight (no ammo, 10% fuel, 4 MG removed): 5163.9 kg (11385 lb)
+Maximum takeoff weight: 8163.1 kg (17996 lb)
 Fuel load: 1006 kg (3095 lb) / 1404 l (370 gal)
+Useful load: 3408.1 kg (7514 lb)
 ## Bf 109 G-14
 Indicated stall speed in flight configuration: 164..181 km/h
 Indicated stall speed in takeoff/landing configuration: 156..172 km/h
@@ -438,7 +540,11 @@ Takeoff speed: 155..180 km/h
 Glideslope speed: 195..205 km/h
 Landing speed: 150..155 km/h
 Supercharger gear shift altitude: fluid coupling
+Empty weight: 2680 kg
+Minimum weight (no ammo, 10% fuel): 2899 kg
+Maximum takeoff weight: 3565 kg
 Fuel load: 304 kg / 400 l
+Useful load: 885 kg
 ## Bf 109 K-4
 Indicated stall speed in flight configuration: 167..190 km/h
 Indicated stall speed in takeoff/landing configuration: 160..181 km/h
@@ -460,7 +566,11 @@ Takeoff speed: 160..190 km/h
 Glideslope speed: 200..215 km/h
 Landing speed: 155..160 km/h
 Supercharger gear shift altitude: fluid coupling
+Empty weight: 2754 kg
+Minimum weight (no ammo, 10% fuel): 3006 kg
+Maximum takeoff weight: 3891 kg
 Fuel load: 304 kg / 400 l
+Useful load: 1137 kg
 ## Fw 190 A-8
 Indicated stall speed in flight configuration: 177..208 km/h
 Indicated stall speed in takeoff/landing configuration: 164..188 km/h
@@ -476,9 +586,15 @@ Takeoff speed: 180..220 km/h
 Glideslope speed: 215..225 km/h
 Landing speed: 160..180 km/h
 Supercharger gear shift altitude: automatic
+Empty weight: 3504 kg
+Minimum weight (no ammo, 10% fuel): 3697 kg
+Maximum takeoff weight: 5239 kg
 Fuel load: 498 kg / 639 l
+Useful load: 1735 kg
 Service ceiling 7000 m
+Empty weight : 431 kg
 Service ceiling 6700 m
+Empty weight: 388 kg
 Service ceiling 7900 m
 Service ceiling 6100 m
 ## La-5 series 8
@@ -496,7 +612,11 @@ Takeoff speed: 170..200 km/h
 Glideslope speed: 200..210 km/h
 Landing speed: 150..160 km/h
 Supercharger gear shift altitude: 3500 m
+Empty weight: 2648 kg
+Minimum weight (no ammo, 10% fuel): 2928 kg
+Maximum takeoff weight: 3593 kg
 Fuel load: 370 kg / 521 l
+Useful load: 945 kg
 ## La-5FN series 2
 Indicated stall speed in flight configuration: 168..185 km/h
 Indicated stall speed in takeoff/landing configuration: 147..159 km/h
@@ -512,7 +632,11 @@ Takeoff speed: 175..195 km/h
 Glideslope speed: 200..210 km/h
 Landing speed: 150..160 km/h
 Supercharger gear shift altitude: 3500 m
+Empty weight: 2655 kg
+Minimum weight (no ammo, 10% fuel): 2929 kg
+Maximum takeoff weight: 3544 kg
 Fuel load: 334 kg / 464 l
+Useful load: 896 kg
 ## Yak-1(b) series 127
 Indicated stall speed in flight configuration: 153..169 km/h
 Indicated stall speed in takeoff/landing configuration: 132..145 km/h
@@ -528,7 +652,11 @@ Takeoff speed: 160..190 km/h
 Glideslope speed: 195..205 km/h
 Landing speed: 135..145 km/h
 Supercharger gear shift altitude: 2300 m
+Empty weight: 2322 kg
+Minimum weight (no ammo, 10% fuel): 2543 kg
+Maximum takeoff weight: 3117 kg
 Fuel load: 304 kg / 408 l
+Useful load: 795 kg
 ## P-40E-1
 Indicated stall speed in flight configuration: 153..176 km/h
 Indicated stall speed in takeoff/landing configuration: 141..164 km/h
@@ -544,7 +672,11 @@ Takeoff speed: 160..190 km/h
 Glideslope speed: 210..220 km/h
 Landing speed: 140..145 km/h
 Supercharger gear shift altitude: single gear
+Empty weight: 3073 kg
+Minimum weight (no ammo, 10% fuel): 3264.2 kg
+Maximum takeoff weight: 4414 kg
 Fuel load: 404 kg / 561 l
+Useful load: 1341 kg
 ## Supermarine Spitfire Mk.VB
 Indicated stall speed in flight configuration: 137..144 km/h
 Indicated stall speed in takeoff/landing configuration: 129..135 km/h
@@ -566,7 +698,10 @@ Takeoff speed: 160..170 km/h
 Glideslope speed: 145..160 km/h
 Landing speed: 130..135 km/h
 Supercharger gear shift altitude: single gear
+Empty weight: 2415 kg
+Minimum weight (no ammo, 10%25 fuel): 2732 kg
 Fuel load: 274 kg / 386 l / 85 gallons
+Useful load: 564 kg
 ## Bf 109 G-6
 Indicated stall speed in flight configuration: 160..177 km/h
 Indicated stall speed in takeoff/landing configuration: 153..169 km/h
@@ -582,7 +717,11 @@ Takeoff speed: 155..180 km/h
 Glideslope speed: 195..205 km/h
 Landing speed: 150..155 km/h
 Supercharger gear shift altitude: fluid coupling
+Empty weight: 2583 kg
+Minimum weight (no ammo, 10% fuel): 2734 kg
+Maximum takeoff weight: 3400 kg
 Fuel load: 304 kg / 400 l
+Useful load: 817 kg
 ## Fw 190 A-3
 Indicated stall speed in flight configuration: 166..189 km/h
 Indicated stall speed in takeoff/landing configuration: 166..172 km/h
@@ -598,7 +737,11 @@ Takeoff speed: 170..210 km/h
 Glideslope speed: 205..215 km/h
 Landing speed: 160..170 km/h
 Supercharger gear shift altitude: automatic
+Empty weight: 3148 kg
+Minimum weight (no ammo, 10% fuel): 3330 kg
+Maximum takeoff weight: 4385 kg
 Fuel load: 409 kg / 524 l
+Useful load: 1237 kg
 ## MC.202 series VIII
 Indicated stall speed in flight configuration: 151..166 km/h
 Indicated stall speed in takeoff/landing configuration: 139..152 km/h
@@ -614,7 +757,11 @@ Takeoff speed: 160..190 km/h
 Glideslope speed: 190..200 km/h
 Landing speed: 140..150 km/h
 Supercharger gear shift altitude: fluid coupling
+Empty weight: 2448 kg
+Minimum weight (no ammo, 10% fuel): 2622 kg
+Maximum takeoff weight: 3197 kg
 Fuel load: 307 kg / 430 l
+Useful load: 749 kg
 ## Hs 129 B-2
 Indicated stall speed in flight configuration: 143..159 km/h
 Indicated stall speed in takeoff/landing configuration: 136..150 km/h
@@ -630,7 +777,11 @@ Takeoff speed: 145..155 km/h
 Glideslope speed: 180..200 km/h
 Landing speed: 135..145 km/h
 Supercharger gear shift altitude: single gear
+Empty weight: 3992 kg
+Minimum weight (no ammo, 10% fuel): 4200 kg
+Maximum takeoff weight: 5170 kg
 Fuel load: 451 kg / 610 l
+Useful load: 1178 kg
 ## Ju 52/3m g4e
 Indicated stall speed in flight configuration: 105..117 km/h
 Indicated stall speed in takeoff/landing configuration: 92..109 km/h
@@ -645,4 +796,8 @@ Flight endurance at 3000 m: 5.3 h, at 205 km/h IAS.
 Takeoff speed: 100..120 km/h
 Glideslope speed: 140..155 km/h
 Landing speed: 95..110 km/h
+Empty weight: 6305 kg
+Minimum weight (no ammo, 10% fuel): 7017 kg
+Maximum takeoff weight: 11333 kg
 Fuel load: 1824 kg / 2400 l
+Useful load: 5028 kg

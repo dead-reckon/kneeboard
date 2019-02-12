@@ -12,41 +12,51 @@ raw_html = open('source.html',encoding="utf8").read()
 html = BeautifulSoup(raw_html, 'html.parser')
     
 # Lists used for table/list generation and filtering.
-list_meta = [ "Takeoff speed", 
-            "Glideslope speed", 
-            "Landing speed" , 
-            "Service ceiling", 
-            "Dive speed limit",
-            "Climb rate at sea level",
-            "Climb rate at 3000 m",
-            "Climb rate at 6000 m",
-            "Flight endurance at 3000 m",
-            "Fuel load",
-            "Supercharger",
-            "Indicated stall speed",
-            "Maximum performance turn"]
+lMeta = [ "Takeoff speed", 
+        "Glideslope speed", 
+        "Landing speed" , 
+        "Service ceiling", 
+        "Dive speed limit",
+        "Climb rate at sea level",
+        "Climb rate at 3000 m",
+        "Climb rate at 6000 m",
+        "Flight endurance at 3000 m",
+        "Fuel load",
+        "Supercharger",
+        "Indicated stall speed",
+        "Maximum performance turn",
+        "Empty weight",
+        "Minimum weight",
+        "Maximum takeoff weight",
+        "Useful load"
+        ]
 
-list_engine = [ "Nominal",
-                "Combat power",
-                "Emergency power",
-                "Boosted power",
-                "Take-off power",
-                "Max Cruising power",
-                "International power",
-                "Emergency Max All",
-                "Climb power",
-                "Model"]
+lEngine = [ "Nominal",
+            "Combat power",
+            "Emergency power",
+            "Boosted power",
+            "Take-off power",
+            "Max Cruising power",
+            "International power",
+            "Emergency Max All",
+            "Climb power",
+            "Model"]
 
-list_speed = [ "Nominal",
-                "Combat power",
-                "Emergency power",
-                "Boosted power",
-                "Take-off power",
-                "Max Cruising power",
-                "International power",
-                "Emergency Max All",
-                "Climb power",
-                "Model"]
+lSpeed = [ "Nominal",
+            "Combat power",
+            "Emergency power",
+            "Boosted power",
+            "Take-off power",
+            "Max Cruising power",
+            "International power",
+            "Emergency Max All",
+            "Climb power",
+            "Model"]
+
+# lWeight = [ "Empty weight",
+#             "Minimum weight",
+#             "Maximum takeoff weight"
+#             ]
 
 
 
@@ -107,18 +117,18 @@ def forum_scrape(html):
     # Return the Final list
     return l_final
 
-def engine_settings(info, search_list):
-    file = open("engine.md", "w")
+# def engine_settings(info, search_list):
+#     file = open("engine.md", "w")
 
-    plane_name = ""
+#     plane_name = ""
 
-    for line in info:
-        if re.search("## ",line):
-            file.write(line)
-        for row in search_list:
-            if re.match(row, line):
-                file.write("\n" + line)
-    file.close()
+#     for line in info:
+#         if re.search("## ",line):
+#             file.write(line)
+#         for row in search_list:
+#             if re.match(row, line):
+#                 file.write("\n" + line)
+#     file.close()
 
 def op_features(info):
     file = open("op.md", "w")
@@ -166,9 +176,40 @@ def oil_water_temp(info):
         #         pass
     file.close()
 
-def plane_meta(info,search_list):
-    # Contains; takeoff/glideslope/landing speeds, dive speed limit, service ceiling, climb rate sea/3k/6k
-    file = open("meta.md", "w")
+# def plane_meta(info,search_list):
+#     # Contains; takeoff/glideslope/landing speeds, dive speed limit, service ceiling, climb rate sea/3k/6k
+#     file = open("meta.md", "w")
+
+#     plane_name = ""
+
+#     for line in info:
+#         if re.search("## ",line):
+#             file.write(line)
+#         for row in search_list:
+#             if re.match(row, line):
+#                 file.write("\n" + line)
+#     file.close()
+
+
+# def plane_weight(info,search_list):
+#     # Contains; takeoff/glideslope/landing speeds, dive speed limit, service ceiling, climb rate sea/3k/6k
+#     file = open("weight.md", "w")
+
+#     plane_name = ""
+
+#     for line in info:
+#         if re.search("## ",line):
+#             file.write(line)
+#         for row in search_list:
+#             if re.match(row, line):
+#                 file.write("\n" + line)
+#     file.close()
+
+
+def parse_info(filename,info,search_list):
+    # Generic Function to parse through info
+    filename = filename + ".md"
+    file = open(filename, "w")
 
     plane_name = ""
 
@@ -182,14 +223,17 @@ def plane_meta(info,search_list):
 
 
 
-content = forum_scrape(html)
 
-plane_meta(content,list_meta)
+content = forum_scrape(html)
 
 op_features(content)
 
 oil_water_temp(content)
 
-engine_settings(content,list_engine)
-
 airspeed(content)
+
+parse_info("meta",content,lMeta)
+
+# parse_info("weight",content,lWeight)
+
+parse_info("engine",content,lEngine)
