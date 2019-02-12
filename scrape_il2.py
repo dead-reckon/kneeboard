@@ -25,7 +25,8 @@ class Scrape_IL2(object):
                 "Empty weight",
                 "Minimum weight",
                 "Maximum takeoff weight",
-                "Useful load"
+                "Useful load",
+                "Maximum load factor"
                 ]
 
         self.lEngine = [ "Nominal",
@@ -90,50 +91,42 @@ class Scrape_IL2(object):
             else:
                 l_final.append(value)
 
-        # Log out
-        file = open("plane.md", "w")
-        [ file.write("\n" + line) for line in l_final ]
-        file.close()
-
         # Return the Final list
         return l_final
 
     def op_features(self):
-        file = open("op.md", "w")
-
-        plane_name = ""
+        # Parse out Operational Features
+        result = []
 
         for line in self.plane_data():
             if re.search("## ",line):
-                file.write("\n" + line)
+                result.append(line)
             if re.match('-', line):
-                file.write("\n" + line)
-        file.close()
+                result.append(line)
+
+        return result
 
     def airspeed(self):
-        file = open("airspeed.md", "w")
-
-        plane_name = ""
+        result = []
 
         for line in self.plane_data():
             if re.search("## ",line):
-                file.write("\n" + line)
+                result.append(line)
             if re.match('Maximum true air speed', line):
-                file.write("\n" + line)
-        file.close()
+                result.append(line)
+
+        return result
 
     def oil_water_temp(self):
-        file = open("oil_water.md", "w")
-
-        plane_name = ""
+        result = []
 
         for line in self.plane_data():
             if re.search("## ",line):
-                file.write("\n" + line)
+                result.append(line)
             elif re.search('maximum temperature', line):
-                file.write("\n" + line)
+                result.append(line)
 
-        file.close()
+        return result
 
     def parse_info(self,list_type):
         # Generic Function to parse through info
@@ -144,18 +137,17 @@ class Scrape_IL2(object):
         elif list_type is "speed":
             search_list = self.lSpeed
 
-        filename = list_type + ".md"
-        file = open(filename, "w")
-
-        plane_name = ""
+        result = []
 
         for line in self.plane_data():
             if re.search("## ",line):
-                file.write(line)
+                result.append(line)
             for row in search_list:
                 if re.match(row, line):
-                    file.write("\n" + line)
-        file.close()
+                    result.append(line)
+
+        return result
+
 
     def __str__(self):
         return "IL2 Scraper Class"
@@ -168,3 +160,7 @@ a.op_features()
 a.airspeed()
 a.parse_info("meta")
 a.parse_info("engine")
+
+file = open("all.md", "w")
+[ file.write("\n" + line) for line in a.plane_data() ]
+file.close()
