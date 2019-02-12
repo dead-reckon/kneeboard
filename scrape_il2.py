@@ -7,6 +7,7 @@ import re
 
 class Scrape_IL2(object):
     def __init__(self,html):
+        # Raw source html file.
         self.raw = html
         # Lists used for table/list generation and filtering.
         self.lMeta = [ "Takeoff speed", 
@@ -26,7 +27,8 @@ class Scrape_IL2(object):
                 "Minimum weight",
                 "Maximum takeoff weight",
                 "Useful load",
-                "Maximum load factor"
+                "Maximum load factor",
+                "Stall angle of attack"
                 ]
 
         self.lEngine = [ "Nominal",
@@ -39,6 +41,8 @@ class Scrape_IL2(object):
                     "Emergency Max All",
                     "Climb power",
                     "Model"]
+
+        self.data = self.plane_data()
 
     def plane_data(self):
         raw_html = open(self.raw,encoding="utf8").read()   
@@ -98,7 +102,7 @@ class Scrape_IL2(object):
         # Parse out Operational Features
         result = []
 
-        for line in self.plane_data():
+        for line in self.data:
             if re.search("## ",line):
                 result.append(line)
             if re.match('-', line):
@@ -109,7 +113,7 @@ class Scrape_IL2(object):
     def airspeed(self):
         result = []
 
-        for line in self.plane_data():
+        for line in self.data:
             if re.search("## ",line):
                 result.append(line)
             if re.match('Maximum true air speed', line):
@@ -120,7 +124,7 @@ class Scrape_IL2(object):
     def oil_water_temp(self):
         result = []
 
-        for line in self.plane_data():
+        for line in self.data:
             if re.search("## ",line):
                 result.append(line)
             elif re.search('maximum temperature', line):
@@ -139,15 +143,13 @@ class Scrape_IL2(object):
 
         result = []
 
-        for line in self.plane_data():
+        for line in self.data:
             if re.search("## ",line):
                 result.append(line)
             for row in search_list:
                 if re.match(row, line):
                     result.append(line)
-
         return result
-
 
     def __str__(self):
         return "IL2 Scraper Class"
@@ -155,12 +157,16 @@ class Scrape_IL2(object):
 
 a = Scrape_IL2("source.html")
 
-a.oil_water_temp()
-a.op_features()
-a.airspeed()
-a.parse_info("meta")
-a.parse_info("engine")
+oil_water = a.oil_water_temp()
+op = a.op_features()
+airspeed = a.airspeed()
+meta = a.parse_info("meta")
+engine = a.parse_info("engine")
 
 file = open("all.md", "w")
 [ file.write("\n" + line) for line in a.plane_data() ]
+file.close()
+
+file = open("meta.md", "w")
+[ file.write("\n" + line) for line in meta ]
 file.close()
