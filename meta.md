@@ -23,6 +23,7 @@ Minimum weight (no ammo, 10% fuel): 1633 kg
 Maximum takeoff weight: 2146 kg
 Fuel load: 191 kg / 260 l
 Useful load: 645 kg
+Combat debut: June 1941
 
 ## MiG-3 series 24
 Indicated stall speed in flight configuration: 159..175 km/h
@@ -47,6 +48,7 @@ Minimum weight (no ammo, 10% fuel): 2831 kg
 Maximum takeoff weight: 3476 kg
 Fuel load: 352 kg / 480 l
 Useful load: 826 kg
+Combat debut: July 1941
 
 ## Il-2 model of 1941
 Indicated stall speed in flight configuration: 136..156 km/h
@@ -71,6 +73,7 @@ Minimum weight (no ammo, 10% fuel): 4464 kg
 Maximum takeoff weight: 5888 kg
 Fuel load: 470 kg / 641 l
 Useful load: 1646 kg
+Combat debut: June 1941
 
 ## Pe-2 series 35
 Indicated stall speed in flight configuration: 175..200 km/h
@@ -95,6 +98,7 @@ Minimum weight (no ammo, 10% fuel): 6640 kg
 Maximum takeoff weight: 8712 kg
 Fuel load: 1129 kg / 1505 l
 Useful load: 2634 kg
+Combat debut: July 1941
 
 ## Bf 109 E-7
 Indicated stall speed in flight configuration: 152..159 km/h
@@ -119,6 +123,7 @@ Minimum weight (no ammo, 10% fuel): 2340 kg
 Maximum takeoff weight: 2893 kg
 Fuel load: 304 kg / 400 l
 Useful load: 844 kg
+Combat debut: August 1940
 
 ## Bf 109 F-2
 Indicated stall speed in flight configuration: 151..168 km/h
@@ -143,6 +148,7 @@ Minimum weight (no ammo, 10% fuel): 2445 kg
 Maximum takeoff weight: 3092 kg
 Fuel load: 304 kg / 400 l
 Useful load: 921 kg
+Combat debut: March 1941
 
 ## Bf 110 E-2
 Indicated stall speed in flight configuration: 148..182 km/h
@@ -167,6 +173,7 @@ Minimum weight (no ammo, 10% fuel): 5597 kg
 Maximum takeoff weight: 8398 kg
 Fuel load: 965 kg / 1270 l
 Useful load: 3223 kg
+Combat debut: October 1940
 
 ## Ju 88 A-4
 Indicated stall speed in flight configuration: 188..205 km/h
@@ -191,6 +198,7 @@ Minimum weight (no ammo, 10% fuel): 9458 kg
 Maximum takeoff weight: 13655 kg
 Fuel load: 1277 kg / 1680 l
 Useful load: 5036 kg
+Combat debut: June 1941
 
 ## LaGG-3 series 29
 Indicated stall speed in flight configuration: 163..189 km/h
@@ -215,6 +223,7 @@ Minimum weight (no ammo, 10% fuel): 2773 kg
 Maximum takeoff weight: 3701 kg
 Fuel load: 348 kg / 467 l
 Useful load: 1081 kg
+Combat debut: May 1942
 
 ## Yak-1 series 69
 Indicated stall speed in flight configuration: 155..171 km/h
@@ -239,6 +248,7 @@ Minimum weight (no ammo, 10% fuel): 2583 kg
 Maximum takeoff weight: 3170 kg
 Fuel load: 304 kg / 408 l
 Useful load: 805 kg
+Combat debut: May 1942
 
 ## Il-2 model of 1942
 Indicated stall speed in flight configuration: 138..158 km/h
@@ -263,6 +273,7 @@ Minimum weight (no ammo, 10% fuel): 4651 kg
 Maximum takeoff weight: 6127 kg
 Fuel load: 535 kg / 730 l
 Useful load: 1665 kg
+Combat debut: June 1942
 
 ## Pe-2 series 87
 Indicated stall speed in flight configuration: 175..200 km/h
@@ -287,6 +298,7 @@ Minimum weight (no ammo, 10% fuel): 6643 kg
 Maximum takeoff weight: 8701 kg
 Fuel load: 1113 kg / 1484 l
 Useful load: 2612 kg
+Combat debut: May 1942
 
 ## Bf 109 F-4
 Indicated stall speed in flight configuration: 154..171 km/h
@@ -311,6 +323,7 @@ Minimum weight (no ammo, 10% fuel): 2545 kg
 Maximum takeoff weight: 3189 kg
 Fuel load: 304 kg / 400 l
 Useful load: 807 kg
+Combat debut: June 1941
 
 ## Bf 109 G-2
 Indicated stall speed in flight configuration: 158..174 km/h
@@ -335,6 +348,7 @@ Minimum weight (no ammo, 10% fuel): 2649 kg
 Maximum takeoff weight: 3283 kg
 Fuel load: 304 kg / 400 l
 Useful load: 797 kg
+Combat debut: May 1942
 
 ## Ju 87 D-3
 Indicated stall speed in flight configuration: 137..176 km/h
@@ -359,6 +373,7 @@ Minimum weight (no ammo, 10% fuel): 4250 kg
 Maximum takeoff weight: 6684 kg
 Fuel load: 626 kg / 840 l
 Useful load: 2754 kg
+Combat debut: March 1942
 
 ## He 111 H-6
 Indicated stall speed in flight configuration: 150..184 km/h
@@ -383,6 +398,7 @@ Minimum weight (no ammo, 10% fuel): 9946 kg
 Maximum takeoff weight: 15239 kg
 Fuel load: 3214 kg / 4285 l
 Useful load: 6276 kg
+Combat debut: June 1941
 
 ## Yak-7B series 36
 Indicated stall speed in flight configuration: 155..172 km/h
@@ -407,6 +423,7 @@ Minimum weight (no ammo, 10% fuel): 2630 kg
 Maximum takeoff weight: 3229 kg
 Fuel load: 305 kg / 420 l
 Useful load: 927 kg
+Combat debut: May 1942
 
 ## P-39L-1
 Indicated stall speed in flight configuration: 160..172 km/h
@@ -431,6 +448,7 @@ Minimum weight (no ammo, 10% fuel): 3331 kg
 Maximum takeoff weight: 3868 kg
 Fuel load: 326,9 kg / 454 l
 Useful load: 939 kg
+Combat debut: late 1942
 
 ## Il-2 model of 1943
 Indicated stall speed in flight configuration: 144..159 km/h
@@ -454,6 +472,7 @@ Minimum weight (no ammo, 10% fuel): 5014 kg
 Maximum takeoff weight: 6375 kg
 Fuel load: 535 kg / 730 l
 Useful load: 1660 kg
+Combat debut: early 1943
 
 ## A-20B
 Indicated stall speed in flight configuration: 161..193 km/h (100..120 mph)
@@ -478,6 +497,7 @@ Minimum weight (no ammo, 10% fuel): 7359 kg
 Maximum takeoff weight: 10466 kg
 Fuel load: 1057 kg / 1468 l / 388 gal
 Useful load: 3665 kg
+Combat debut: spring 1942
 
 ## Bf 109 G-4
 Indicated stall speed in flight configuration: 165..175 km/h
@@ -502,6 +522,7 @@ Minimum weight (no ammo, 10% fuel): 2669 kg
 Maximum takeoff weight: 3303 kg
 Fuel load: 304 kg / 400 l
 Useful load: 797 kg
+Combat debut: spring 1943
 
 ## Fw 190 A-5
 Indicated stall speed in flight configuration: 169..195 km/h
@@ -526,6 +547,7 @@ Minimum weight (no ammo, 10% fuel): 3401 kg
 Maximum takeoff weight: 4648 kg
 Fuel load: 409 kg / 524 l
 Useful load: 1429 kg
+Combat debut: Spring of 1943
 
 ## Bf 110 G-2
 Indicated stall speed in flight configuration: 160..190 km/h
@@ -550,6 +572,7 @@ Minimum weight (no ammo, 10% fuel): 6335 kg
 Maximum takeoff weight: 8928 kg
 Fuel load: 1003 kg / 1270 l
 Useful load: 3023 kg
+Combat debut: Autumn 1942
 
 ## He 111 H-16
 Indicated stall speed in flight configuration: 150..194 km/h
@@ -574,6 +597,7 @@ Minimum weight (no ammo, 10% fuel): 9831 kg
 Maximum takeoff weight: 15689 kg
 Fuel load: 2553 kg / 3450 l
 Useful load: 6991 kg
+Combat debut: Winter of 1943
 
 ## Spitfire Mk.IXe
 Indicated stall speed in flight configuration: 143...163 km/h
@@ -602,6 +626,7 @@ Supercharger gear shift altitude: automatic with possibility of manual switch to
 Empty weight: 2530 kg
 Minimum weight (no ammo, 10% fuel): 2977 kg
 Fuel load: 274 kg / 386 l / 85 gallons
+Combat debut: June 1942
 
 ## P-47D-28
 Indicated stall speed in flight configuration: 178..222 km/h (111..138 mph)
@@ -629,6 +654,7 @@ Minimum weight (no ammo, 10% fuel, 4 MG removed): 5163.9 kg (11385 lb)
 Maximum takeoff weight: 8163.1 kg (17996 lb)
 Fuel load: 1006 kg (3095 lb) / 1404 l (370 gal)
 Useful load: 3408.1 kg (7514 lb)
+Combat debut: 1944
 
 ## Bf 109 G-14
 Indicated stall speed in flight configuration: 164..181 km/h
@@ -653,6 +679,7 @@ Minimum weight (no ammo, 10% fuel): 2899 kg
 Maximum takeoff weight: 3565 kg
 Fuel load: 304 kg / 400 l
 Useful load: 885 kg
+Combat debut: July 1944
 
 ## Bf 109 K-4
 Indicated stall speed in flight configuration: 167..190 km/h
@@ -683,6 +710,7 @@ Minimum weight (no ammo, 10% fuel): 3006 kg
 Maximum takeoff weight: 3891 kg
 Fuel load: 304 kg / 400 l
 Useful load: 1137 kg
+Combat debut: October 1944
 
 ## Fw 190 A-8
 Indicated stall speed in flight configuration: 177..208 km/h
@@ -707,6 +735,7 @@ Minimum weight (no ammo, 10% fuel): 3697 kg
 Maximum takeoff weight: 5239 kg
 Fuel load: 498 kg / 639 l
 Useful load: 1735 kg
+Combat debut: Spring 1944
 Service ceiling 7000 m
 Empty weight : 431 kg
 Service ceiling 6700 m
@@ -737,6 +766,7 @@ Minimum weight (no ammo, 10% fuel): 2928 kg
 Maximum takeoff weight: 3593 kg
 Fuel load: 370 kg / 521 l
 Useful load: 945 kg
+Combat debut: September 1942
 
 ## La-5FN series 2
 Indicated stall speed in flight configuration: 168..185 km/h
@@ -761,6 +791,7 @@ Minimum weight (no ammo, 10% fuel): 2929 kg
 Maximum takeoff weight: 3544 kg
 Fuel load: 334 kg / 464 l
 Useful load: 896 kg
+Combat debut: June 1943
 
 ## Yak-1(b) series 127
 Indicated stall speed in flight configuration: 153..169 km/h
@@ -785,6 +816,7 @@ Minimum weight (no ammo, 10% fuel): 2543 kg
 Maximum takeoff weight: 3117 kg
 Fuel load: 304 kg / 408 l
 Useful load: 795 kg
+Combat debut: April 1943
 
 ## P-40E-1
 Indicated stall speed in flight configuration: 153..176 km/h
@@ -809,6 +841,7 @@ Minimum weight (no ammo, 10% fuel): 3264.2 kg
 Maximum takeoff weight: 4414 kg
 Fuel load: 404 kg / 561 l
 Useful load: 1341 kg
+Combat debut: December 1941
 
 ## Supermarine Spitfire Mk.VB
 Indicated stall speed in flight configuration: 137..144 km/h
@@ -838,6 +871,7 @@ Empty weight: 2415 kg
 Minimum weight (no ammo, 10%25 fuel): 2732 kg
 Fuel load: 274 kg / 386 l / 85 gallons
 Useful load: 564 kg
+Combat debut: Winter 1941 (In Battle of Kuban - at Spring 1943)
 
 ## Bf 109 G-6
 Indicated stall speed in flight configuration: 160..177 km/h
@@ -862,6 +896,7 @@ Minimum weight (no ammo, 10% fuel): 2734 kg
 Maximum takeoff weight: 3400 kg
 Fuel load: 304 kg / 400 l
 Useful load: 817 kg
+Combat debut: february 1943
 
 ## Fw 190 A-3
 Indicated stall speed in flight configuration: 166..189 km/h
@@ -886,6 +921,7 @@ Minimum weight (no ammo, 10% fuel): 3330 kg
 Maximum takeoff weight: 4385 kg
 Fuel load: 409 kg / 524 l
 Useful load: 1237 kg
+Combat debut: March 1942
 
 ## MC.202 series VIII
 Indicated stall speed in flight configuration: 151..166 km/h
@@ -910,6 +946,7 @@ Minimum weight (no ammo, 10% fuel): 2622 kg
 Maximum takeoff weight: 3197 kg
 Fuel load: 307 kg / 430 l
 Useful load: 749 kg
+Combat debut: June 1942
 
 ## Hs 129 B-2
 Indicated stall speed in flight configuration: 143..159 km/h
@@ -934,6 +971,7 @@ Minimum weight (no ammo, 10% fuel): 4200 kg
 Maximum takeoff weight: 5170 kg
 Fuel load: 451 kg / 610 l
 Useful load: 1178 kg
+Combat debut: May 1942
 
 ## Ju 52/3m g4e
 Indicated stall speed in flight configuration: 105..117 km/h
@@ -957,3 +995,4 @@ Minimum weight (no ammo, 10% fuel): 7017 kg
 Maximum takeoff weight: 11333 kg
 Fuel load: 1824 kg / 2400 l
 Useful load: 5028 kg
+Combat debut: 1936

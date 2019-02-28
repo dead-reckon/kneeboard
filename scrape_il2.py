@@ -28,10 +28,11 @@ class Scrape_IL2(object):
                 "Maximum takeoff weight",
                 "Useful load",
                 "Maximum load factor",
-                "Stall angle of attack"
+                "Stall angle of attack",
+                "Combat debut"
                 ]
 
-        self.lEngine = [ "Nominal",
+        self.lLimits = [ "Nominal",
                     "Combat power",
                     "Emergency power",
                     "Boosted power",
@@ -136,10 +137,10 @@ class Scrape_IL2(object):
         # Generic Function to parse through info
         if list_type is "meta":
             search_list = self.lMeta
-        elif list_type is "engine":
-            search_list = self.lEngine
-        elif list_type is "speed":
-            search_list = self.lSpeed
+        elif list_type is "limits":
+            search_list = self.lLimits
+        # elif list_type is "speed":
+        #     search_list = self.lSpeed
 
         result = []
 
@@ -154,19 +155,36 @@ class Scrape_IL2(object):
     def __str__(self):
         return "IL2 Scraper Class"
 
+def gen_markdown_logs():
 
-a = Scrape_IL2("source.html")
+    plane_data = Scrape_IL2("source.html")
 
-oil_water = a.oil_water_temp()
-op = a.op_features()
-airspeed = a.airspeed()
-meta = a.parse_info("meta")
-engine = a.parse_info("engine")
+    file = open("all.md", "w")
+    [ file.write("\n" + line) for line in plane_data.plane_data() ]
+    file.close()
 
-file = open("all.md", "w")
-[ file.write("\n" + line) for line in a.plane_data() ]
-file.close()
+    file = open("meta.md", "w")
+    [ file.write("\n" + line) for line in plane_data.parse_info("meta") ]
+    file.close()
 
-file = open("meta.md", "w")
-[ file.write("\n" + line) for line in meta ]
-file.close()
+    file = open("oil_water.md", "w")
+    [ file.write("\n" + line) for line in plane_data.oil_water_temp() ]
+    file.close()
+
+    file = open("op.md", "w")
+    [ file.write("\n" + line) for line in plane_data.op_features() ]
+    file.close()
+
+    file = open("airspeed.md", "w")
+    [ file.write("\n" + line) for line in plane_data.airspeed() ]
+    file.close()
+
+    file = open("limits.md", "w")
+    [ file.write("\n" + line) for line in plane_data.parse_info("limits") ]
+    file.close()
+
+def django_store():
+    pass
+
+
+gen_markdown_logs()
