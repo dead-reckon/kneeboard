@@ -40,6 +40,19 @@ title: Kneeboard IL2
     </div>
 
     <div class="card" id="{{ plane.id }}_heading">
+        <button class="btn-sm btn-dark btn-block" type="button" data-toggle="collapse" data-target="#{{ plane.id }}_stats" aria-expanded="true" aria-controls="{{ plane.id }}_stats">
+          Stats
+        </button>
+    </div>
+    <div id="{{ plane.id }}_stats" class="collapse" aria-labelledby="{{ plane.id }}_heading" data-parent="#{{ plane.id }}_accd">
+      <div class="card-body">
+        <p>{{ plane.debut }}</p>
+        <p>{{ plane.weight }}</p>
+        <p>{{ plane.dimensions }}</p>
+      </div>
+    </div>
+
+    <div class="card" id="{{ plane.id }}_heading">
         <button class="btn-sm btn-dark btn-block" type="button" data-toggle="collapse" data-target="#{{ plane.id }}_limits" aria-expanded="true" aria-controls="{{ plane.id }}_limits">
           Limits
         </button>
@@ -50,19 +63,6 @@ title: Kneeboard IL2
         <p>{{ plane.stall }}</p>
         <p>{{ plane.turn }}</p>
         <p>{{ plane.max_air }}</p>
-      </div>
-    </div>
-
-    <div class="card" id="{{ plane.id }}_heading">
-        <button class="btn-sm btn-dark btn-block" type="button" data-toggle="collapse" data-target="#{{ plane.id }}_stats" aria-expanded="true" aria-controls="{{ plane.id }}_stats">
-          Stats
-        </button>
-    </div>
-    <div id="{{ plane.id }}_stats" class="collapse" aria-labelledby="{{ plane.id }}_heading" data-parent="#{{ plane.id }}_accd">
-      <div class="card-body">
-        <p>{{ plane.debut }}</p>
-        <p>{{ plane.weight }}</p>
-        <p>{{ plane.dimensions }}</p>
       </div>
     </div>
 
