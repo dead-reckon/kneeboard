@@ -10,12 +10,11 @@ title: Kneeboard IL2
 <div class="accordion" id="{{ plane.id }}_accd">
 <div class="card">
   <div class="card-header">
-    <h5 class="card-title">
+    <h3 class="card-title">
     {{ plane.name }}
-    </h5> 
+    </h3> 
 
-    <div class="card">
-    <div class="card-header" id="{{ plane.id }}_heading">
+    <div class="card" id="{{ plane.id }}_heading">
         <button class="btn-sm btn-dark btn-block btn-block" type="button" data-toggle="collapse" data-target="#{{ plane.id }}_e" aria-expanded="true" aria-controls="{{ plane.id }}_e">
           Engine
         </button>
@@ -26,15 +25,11 @@ title: Kneeboard IL2
         <p>{{ plane.temp }}</p>
       </div>
     </div>
-  </div>
 
-  <div class="card">
-    <div class="card-header" id="{{ plane.id }}_heading">
-      <h2 class="mb-0">
+  <div class="card" id="{{ plane.id }}_heading">
         <button class="btn-sm btn-dark btn-block" type="button" data-toggle="collapse" data-target="#{{ plane.id }}_s" aria-expanded="true" aria-controls="{{ plane.id }}_s">
           Speeds
         </button>
-      </h2>
     </div>
     <div id="{{ plane.id }}_s" class="collapse" aria-labelledby="{{ plane.id }}_heading" data-parent="#{{ plane.id }}_accd">
       <div class="card-body">
@@ -47,15 +42,12 @@ title: Kneeboard IL2
         <p>{{ plane.max_air }}</p>
       </div>
     </div>
-  </div>
 
-  <div class="card">
-    <div class="card-header" id="{{ plane.id }}_heading">
-      <h2 class="mb-0">
+
+    <div class="card" id="{{ plane.id }}_heading">
         <button class="btn-sm btn-dark btn-block" type="button" data-toggle="collapse" data-target="#{{ plane.id }}_stats" aria-expanded="true" aria-controls="{{ plane.id }}_stats">
           Stats
         </button>
-      </h2>
     </div>
     <div id="{{ plane.id }}_stats" class="collapse" aria-labelledby="{{ plane.id }}_heading" data-parent="#{{ plane.id }}_accd">
       <div class="card-body">
@@ -64,11 +56,8 @@ title: Kneeboard IL2
         <p>{{ plane.dimensions }}</p>
       </div>
     </div>
-  </div>
 
-  <div class="card">
-    <div class="card-header" id="{{ plane.id }}_heading">
-      <h2 class="mb-0">
+    <div class="card" id="{{ plane.id }}_heading">
         <button class="btn-sm btn-dark btn-block" type="button" data-toggle="collapse" data-target="#{{ plane.id }}_feat" aria-expanded="true" aria-controls="{{ plane.id }}_feat">
           Features
         </button>
@@ -81,7 +70,6 @@ title: Kneeboard IL2
     </div>
   </div>
   </div>
-</div>
 </div>
 
 <br>
