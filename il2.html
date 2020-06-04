@@ -1,0 +1,84 @@
+---
+layout: default
+title: Kneeboard IL2
+---
+{% for plane in site.data.info %}
+{% if plane.circus == 0 %}
+<div class="accordion" id="{{ plane.id }}_accd">
+<div class="card">
+  <div class="card-header">
+    <h5 class="card-title">
+    {{ plane.name }}
+    </h5> 
+
+    <div class="card">
+    <div class="card-header" id="{{ plane.id }}_heading">
+        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#{{ plane.id }}_e" aria-expanded="true" aria-controls="{{ plane.id }}_e">
+          Engine
+        </button>
+    </div>
+    <div id="{{ plane.id }}_e" class="collapse" aria-labelledby="{{ plane.id }}_heading" data-parent="#{{ plane.id }}_accd">
+      <div class="card-body">
+        <p>{{ plane.engine }}</p>
+        <p>{{ plane.temp }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="{{ plane.id }}_heading">
+      <h2 class="mb-0">
+        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#{{ plane.id }}_s" aria-expanded="true" aria-controls="{{ plane.id }}_s">
+          Speeds
+        </button>
+      </h2>
+    </div>
+    <div id="{{ plane.id }}_s" class="collapse" aria-labelledby="{{ plane.id }}_heading" data-parent="#{{ plane.id }}_accd">
+      <div class="card-body">
+        <p>{{ plane.speeds }}</p>
+        <p>{{ plane.stall }}</p>
+        <p>{{ plane.climb }}</p>
+        <p>{{ plane.dive }}</p>
+        <p>{{ plane.endurance }}</p>
+        <p>{{ plane.turn }}</p>
+        <p>{{ plane.max_air }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="{{ plane.id }}_heading">
+      <h2 class="mb-0">
+        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#{{ plane.id }}_stats" aria-expanded="true" aria-controls="{{ plane.id }}_stats">
+          Stats
+        </button>
+      </h2>
+    </div>
+    <div id="{{ plane.id }}_stats" class="collapse" aria-labelledby="{{ plane.id }}_heading" data-parent="#{{ plane.id }}_accd">
+      <div class="card-body">
+        <p>{{ plane.debut }}</p>
+        <p>{{ plane.weight }}</p>
+        <p>{{ plane.dimensions }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="{{ plane.id }}_heading">
+      <h2 class="mb-0">
+        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#{{ plane.id }}_feat" aria-expanded="true" aria-controls="{{ plane.id }}_feat">
+          Features
+        </button>
+      </h2>
+    </div>
+    <div id="{{ plane.id }}_feat" class="collapse" aria-labelledby="{{ plane.id }}_heading" data-parent="#{{ plane.id }}_accd">
+      <div class="card-body">
+        <p>{{ plane.features }}</p>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+</div><br>
+{% endif %}
+{% endfor %}
