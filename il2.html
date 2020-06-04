@@ -26,7 +26,7 @@ title: Kneeboard IL2
       </div>
     </div>
 
-  <div class="card" id="{{ plane.id }}_heading">
+    <div class="card" id="{{ plane.id }}_heading">
         <button class="btn-sm btn-dark btn-block" type="button" data-toggle="collapse" data-target="#{{ plane.id }}_s" aria-expanded="true" aria-controls="{{ plane.id }}_s">
           Speeds
         </button>
@@ -34,15 +34,24 @@ title: Kneeboard IL2
     <div id="{{ plane.id }}_s" class="collapse" aria-labelledby="{{ plane.id }}_heading" data-parent="#{{ plane.id }}_accd">
       <div class="card-body">
         <p>{{ plane.speeds }}</p>
-        <p>{{ plane.stall }}</p>
         <p>{{ plane.climb }}</p>
         <p>{{ plane.dive }}</p>
+      </div>
+    </div>
+
+    <div class="card" id="{{ plane.id }}_heading">
+        <button class="btn-sm btn-dark btn-block" type="button" data-toggle="collapse" data-target="#{{ plane.id }}_limits" aria-expanded="true" aria-controls="{{ plane.id }}_limits">
+          Limits
+        </button>
+    </div>
+    <div id="{{ plane.id }}_limits" class="collapse" aria-labelledby="{{ plane.id }}_heading" data-parent="#{{ plane.id }}_accd">
+      <div class="card-body">
         <p>{{ plane.endurance }}</p>
+        <p>{{ plane.stall }}</p>
         <p>{{ plane.turn }}</p>
         <p>{{ plane.max_air }}</p>
       </div>
     </div>
-
 
     <div class="card" id="{{ plane.id }}_heading">
         <button class="btn-sm btn-dark btn-block" type="button" data-toggle="collapse" data-target="#{{ plane.id }}_stats" aria-expanded="true" aria-controls="{{ plane.id }}_stats">
@@ -65,7 +74,9 @@ title: Kneeboard IL2
     </div>
     <div id="{{ plane.id }}_feat" class="collapse" aria-labelledby="{{ plane.id }}_heading" data-parent="#{{ plane.id }}_accd">
       <div class="card-body">
-        <p>{{ plane.features }}</p>
+        <p>
+        <ul>{{ plane.features }}</ul>
+        </p>
       </div>
     </div>
   </div>
