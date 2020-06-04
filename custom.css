@@ -4,6 +4,7 @@ Extra small devices (portrait phones, less than 544px)
 No media query since this is the default in Bootstrap because it is "mobile first"
 */
 p {font-size:0.70rem;} /*1rem = 16px*/
+li {font-size:0.70rem;}
 /*
 ####################################################
 M E D I A  Q U E R I E S

@@ -9,8 +9,9 @@ title: Kneeboard IL2
 
 <div class="accordion" id="{{ plane.id }}_accd">
 <div class="card">
+  <img class="card-img-top" src="assets/img/l_{{ plane.id }}.png" alt="{{ plane.name }}">
   <div class="card-header">
-    <h3 class="card-title">
+    <h3 class="card-title" style="font-family:stencil">
     {{ plane.name }}
     </h3> 
 
@@ -74,9 +75,7 @@ title: Kneeboard IL2
     </div>
     <div id="{{ plane.id }}_feat" class="collapse" aria-labelledby="{{ plane.id }}_heading" data-parent="#{{ plane.id }}_accd">
       <div class="card-body">
-        <p>
         <ul>{{ plane.features }}</ul>
-        </p>
       </div>
     </div>
   </div>
