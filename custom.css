@@ -1,10 +1,11 @@
 
-.stencil {font-family: 'Saira Stencil One', cursive;}
-.stencil_body {font-family: 'Allerta Stencil', sans-serif;}
+.sstencil {font-family: 'Saira Stencil One', cursive;}
+.astencil {font-family: 'Allerta Stencil', sans-serif;}
+.istencil {font-family: 'Sirin Stencil', cursive;}
 
 .indent {padding-left: 10px;}
 /* 
-Extra small devices (portrait phones, less than 544px) 
+Extra small de`vices (portrait phones, less than 544px) 
 No media query since this is the default in Bootstrap because it is "mobile first"
 */
 p {font-size:0.70rem;} /*1rem = 16px*/

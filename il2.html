@@ -11,7 +11,7 @@ title: Kneeboard IL2
 <div class="card">
   <img class="card-img-top" src="assets/img/l_{{ plane.id }}.png" alt="{{ plane.name }}">
   <div class="card-header">
-    <h3 class="card-title stencil_body" >
+    <h3 class="card-title sstencil" >
     {{ plane.name }}
     </h3> 
 
@@ -22,9 +22,9 @@ title: Kneeboard IL2
     </div>
     <div id="{{ plane.id }}_e" class="collapse" aria-labelledby="{{ plane.id }}_heading" data-parent="#{{ plane.id }}_accd">
       <div class="card-body">
-        <h5 class="stencil_body">Optimal Engine Settings</h5>
+        <h5 class="sstencil">Optimal Engine Settings</h5>
         <p class="indent">{{ plane.engine }}</p>
-        <h5 class="stencil_body">Optimal Temp Settings</h5>
+        <h5 class="sstencil">Optimal Temp Settings</h5>
         <p class="indent">{{ plane.temp }}</p>
       </div>
     </div>
@@ -36,9 +36,9 @@ title: Kneeboard IL2
     </div>
     <div id="{{ plane.id }}_s" class="collapse" aria-labelledby="{{ plane.id }}_heading" data-parent="#{{ plane.id }}_accd">
       <div class="card-body">
-        <h5 class="stencil_body">Takeoff & Landing</h5>
+        <h5 class="sstencil">Takeoff & Landing</h5>
         <p class="indent">{{ plane.speeds }}</p>
-        <h5 class="stencil_body">Cimb & Dive</h5>
+        <h5 class="sstencil">Cimb & Dive</h5>
         <p class="indent">{{ plane.climb }} <br> {{ plane.dive }}</p>
         
       </div>
@@ -51,9 +51,9 @@ title: Kneeboard IL2
     </div>
     <div id="{{ plane.id }}_stats" class="collapse" aria-labelledby="{{ plane.id }}_heading" data-parent="#{{ plane.id }}_accd">
       <div class="card-body">
-        <h5 class="stencil_body">Debut</h5>
+        <h5 class="sstencil">Debut</h5>
         <p class="indent">{{ plane.debut }}</p>
-        <h5 class="stencil_body">Size & Weight</h5>
+        <h5 class="sstencil">Size & Weight</h5>
         <p class="indent">{{ plane.weight }}<br>{{ plane.dimensions }}</p>
       </div>
     </div>
@@ -65,13 +65,13 @@ title: Kneeboard IL2
     </div>
     <div id="{{ plane.id }}_limits" class="collapse" aria-labelledby="{{ plane.id }}_heading" data-parent="#{{ plane.id }}_accd">
       <div class="card-body">
-        <h5 class="stencil_body">Endurance</h5>
+        <h5 class="sstencil">Endurance</h5>
         <p class="indent">{{ plane.endurance }}</p>
-        <h5 class="stencil_body">Optimal Turn Time</h5>
+        <h5 class="sstencil">Optimal Turn Time</h5>
         <p class="indent">{{ plane.turn }}</p>
-        <h5 class="stencil_body">Max True Air Speed</h5>
+        <h5 class="sstencil">Max True Air Speed</h5>
         <p class="indent">{{ plane.max_air }}</p>
-        <h5 class="stencil_body">Stall Speed</h5>
+        <h5 class="sstencil">Stall Speed</h5>
         <p class="indent">{{ plane.stall }}</p>
       </div>
     </div>
@@ -84,7 +84,7 @@ title: Kneeboard IL2
     </div>
     <div id="{{ plane.id }}_feat" class="collapse" aria-labelledby="{{ plane.id }}_heading" data-parent="#{{ plane.id }}_accd">
       <div class="card-body">
-        <h5 class="stencil_body">Operational Features</h5>
+        <h5 class="sstencil">Operational Features</h5>
         <ul>{{ plane.features }}</ul>
       </div>
     </div>
