@@ -9,12 +9,12 @@ title: Test
     <tr>
       <th data-sortable="true" data-field="plane">Plane</th>
       <th data-sortable="true" data-field="PriorityType">Type</th>
-      <th data-sortable="true" data-field="ServiceCeiling">ServiceCeiling</th>
-      <th data-sortable="true" data-field="DiveCAS">DiveCAS</th>
-      <th data-sortable="true" data-field="ClimbCAS">ClimbCAS</th>
-      <th data-sortable="true" data-field="MaxClimbCAS">MaxClimbCAS</th>
+      <th data-sortable="true" data-field="ServiceCeiling">Ceiling</th>
+      <th data-sortable="true" data-field="DiveCAS">Dive</th>
+      <th data-sortable="true" data-field="ClimbCAS">Climb</th>
       <th data-sortable="true" data-field="TurnRate">TurnRate</th>
       <th data-sortable="true" data-field="MaxSpeed">MaxSpeed</th>
+      <th data-sortable="true" data-field="MaxClimbCAS">MaxClimb</th>
       <th data-sortable="true" data-field="MaxClimbRate">MaxClimbRate</th>
 
     </tr>
@@ -27,9 +27,9 @@ title: Test
       <td>{{ plane.ServiceCeiling }}</td>
       <td>{{ plane.DiveCAS }}</td>
       <td>{{ plane.ClimbCAS }}</td> 
-      <td>{{ plane.MaxClimbCAS }}</td>
       <td>{{ plane.TurnRate }}</td>
       <td>{{ plane.MaxSpeed }}</td>
+      <td>{{ plane.MaxClimbCAS }}</td>
       <td>{{ plane.MaxClimbRate }}</td>
     </tr>
   {% endfor %}
