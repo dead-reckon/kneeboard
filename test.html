@@ -3,25 +3,35 @@ layout: default
 title: Test
 ---
 
+
 <table data-toggle="table">
   <thead class="thead-dark">
     <tr>
-      <th data-sortable="true" data-field="id">Item ID</th>
-      <th data-sortable="true" data-field="name">Item Name</th>
-      <th data-sortable="true" data-field="price">Item Price</th>
+      <th data-sortable="true" data-field="plane">Plane</th>
+      <th data-sortable="true" data-field="MaxSpeed">MaxSpeed</th>
+      <th data-sortable="true" data-field="MaxClimbRate">MaxClimbRate</th>
+      <th data-sortable="true" data-field="ServiceCeiling">ServiceCeiling</th>
+      <th data-sortable="true" data-field="TurnRate">TurnRate</th>
+<!--       <th data-sortable="true" data-field="MaxClimbCAS">MaxClimbCAS</th>
+      <th data-sortable="true" data-field="DiveCAS">DiveCAS</th>
+      <th data-sortable="true" data-field="ClimbCAS">ClimbCAS</th>
+      <th data-sortable="true" data-field="PriorityType">PriorityType</th> -->
     </tr>
   </thead>
   <tbody>
+  {% for plane in site.data.ai %}
     <tr>
-      <td>1</td>
-      <td>Item 1</td>
-      <td>$1</td>
+      <th>{{ plane.name }}</th>
+      <td>{{ plane.MaxSpeed }}</td>
+      <td>{{ plane.MaxClimbRate }}</td>
+      <td>{{ plane.ServiceCeiling }}</td>
+      <td>{{ plane.TurnRate }}</td>
+  <!--     <td>{{ plane.MaxClimbCAS }}</td>
+      <td>{{ plane.DiveCAS }}</td>
+      <td>{{ plane.ClimbCAS }}</td>
+      <td>{{ plane.PriorityType }}</td> -->
     </tr>
-    <tr>
-      <td>2</td>
-      <td>Item 2</td>
-      <td>$2</td>
-    </tr>
+  {% endfor %}
   </tbody>
 </table>
 
