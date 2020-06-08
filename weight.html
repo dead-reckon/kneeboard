@@ -21,11 +21,11 @@ title: Weight Tables
   {% for plane in site.data.stats %}
     <tr>
       <th>{{ plane.name }}</th>
-      <td>{{ plane.Empty }}</td>
+      <td data-toggle="tooltip" data-placement="top" title="Plane Empty Weight (kg)">{{ plane.Empty }}</td>
       <td data-toggle="tooltip" data-placement="top" title="Plane Minimum Weight (no ammo, 10%25 fuel)">{{ plane.Minimum }}</td> 
-      <td>{{ plane.Standard }}</td>
-      <td>{{ plane.Maximum }}</td>
-      <td>{{ plane.Fuel }}</td>
+      <td data-placement="top" title="Plane Standard Weight (kg)">{{ plane.Standard }}</td>
+      <td data-placement="top" title="Plane Maximum Weight (kg)">{{ plane.Maximum }}</td>
+      <td data-placement="top" title="Fuel Load in (L)">{{ plane.Fuel }}</td>
     </tr>
   {% endfor %}
   </tbody>
