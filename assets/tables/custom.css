@@ -1,0 +1,248 @@
+/*Tweaks and Modifications*/
+/**************************/
+/*Disable upper range responsive media breakpoint*/
+/*@media (min-width: 970px) and (max-width: 2500px) {
+   .container {
+      width: 970px;
+   }
+}*/
+
+/*Allow a little padding in phone view*/
+.padit {
+	margin: 15px;
+}
+
+.pictext {
+	padding-right: 10px;
+}
+
+/*keep navbar from overlapping*/
+/*body {
+	padding-top: 50px;
+}*/
+
+/*****************************/
+/* TEXT AND CUSTOM FORMATING*/
+
+.test {
+	border:3px solid #999999;
+	background-color:#f0f8ff;
+	padding:0px;
+	}
+
+.test2 {
+	border:3px solid #999999;
+	background-color:#518EF6;
+	padding:0px;
+	}
+
+.text-center {
+  text-align: center;
+}
+
+.sans-18 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+}
+
+.sans-15 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+}
+
+/* Change navbar dropdown text*/
+/*.nav.navbar-nav li a {
+   color: #A35C15;
+ }
+
+.nav.navbar-nav a:hover {
+ color: #A35C15;
+}*/
+
+/*ffs orange and font*/
+.ffs-org{
+	color: #CD771C;
+	font-family: 'Lobster', cursive;
+}
+
+.ffs-color{
+	color: #CD771C;
+}
+
+.lobster {
+	font-family: 'Lobster', cursive;
+}
+
+.full-page {
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+
+.max-page {
+	min-width: 90%;
+	min-height: 600px;
+	border: none;
+}
+
+.wrapper {
+    position: relative;
+    padding-bottom: 100%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+.wrapper iframe embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*@import url('https://fonts.googleapis.com/css?family=Anton|Inconsolata');*/
+
+h1 {
+	font-family: 'Oswald', sans-serif;
+	/*text-transform: uppercase;*/
+	color: #362121;
+}
+
+h2,h3,h4 {
+	font-family: 'Oswald', sans-serif;
+	color: #667A9E;
+	font-size: 170%;
+}
+
+h3,h4 {
+	font-family: 'Oswald', sans-serif;
+	color: #667A9E;
+	font-size: 150%;
+}
+
+
+p {
+	font-family: 'Lato', sans-serif;
+	margin-left: 20px;
+}
+ul {
+	font-family: 'Lato', sans-serif;
+}
+
+p {
+	color: #898A87;
+}
+
+.lgray {
+	color: #898A87;
+}
+
+img {
+	object-fit: cover;
+}
+
+.googleCalendar{
+  position: relative;
+  height: 0;
+  width: 100%;
+  padding-bottom: 90%;
+}
+
+.googleCalendar iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin-bottom: 60px; /* Margin bottom by footer height */
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px; /* Set the fixed height of the footer here */
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #f5f5f5;
+}
+
+.cheader h1{
+	font-size: 3em;
+	-webkit-text-stroke: 1px black;
+   	color: #CD771C;
+/*   	text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;*/
+    font-family: 'Oswald';
+    text-transform: none;
+}
+
+.ffsheader h1{
+	font-size: 3em;
+	-webkit-text-stroke: 1px black;
+   	color: #CD771C;
+/*   	text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;*/
+    font-family: 'Magneto';
+    text-transform: none;
+}
+
+h1 span{
+	background-color: #343a40;
+	padding: 5px;
+	border-radius: 15px;
+	font-family: 'Magneto';
+}
+
+.ctext p{
+    color: black;
+    font-size: 1.25em;
+}
+.cap {
+    top: 0;
+    bottom: auto;
+}
+
+.dropdown-header {
+	padding-left: 15px;
+}
+
+.card {
+  margin-bottom:  15px;
+}
+/*html,body{height:100%;}
+.carousel,.item,.active{height:100%;}
+.carousel-inner{height:100%;}
+.fill{width:100%;height:100%;background-position:center;background-size:cover;}*/
+
+.rtest {
+  border-color: red;
+  border-width: 5px;
+  border-style: solid;
+}
+
+.btest {
+  border-color: blue;
+  border-width: 5px;
+  border-style: solid;
+}
+
+.gtest {
+  border-color: green;
+  border-width: 5px;
+  border-style: solid;
+}
