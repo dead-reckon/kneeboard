@@ -10,10 +10,9 @@ title: Specifications Tables
   <thead class="thead-dark">
     <tr>
       <th data-sortable="true" data-field="plane">Plane</th>
-      <th data-sortable="true" data-field="PriorityType"  data-toggle="tooltip" data-placement="top" title="Plane Total Length">Length</th>
-      <th data-sortable="true" data-field="CruiseCAS" data-toggle="tooltip" data-placement="top" title="Plane Wing Span">Wingspan</th>
-      <th data-sortable="true" data-field="MaxSpeed" data-placement="top" title="Minimum Weight of Plane">MinWeight</th>
-      <th data-sortable="true" data-field="DiveCAS" data-placement="top" title="Maximum Weight of Plane">MaxWeight</th>
+      <th data-sortable="true" data-field="PriorityType"  data-toggle="tooltip" data-placement="top" title="Plane Total Length (m)">Length</th>
+      <th data-sortable="true" data-field="CruiseCAS" data-toggle="tooltip" data-placement="top" title="Plane Wing Span (m)">Wingspan</th>
+      <th data-sortable="true" data-field="Cruise" data-toggle="tooltip" data-placement="top" title="Plane Wing Surface (m^2)">Wing</th>
       <th data-sortable="true" data-field="TurnRate" data-placement="top" title="Combat Debut">Debut</th>
     </tr>
   </thead>
@@ -23,8 +22,7 @@ title: Specifications Tables
       <th>{{ plane.name }}</th>
       <td>{{ plane.Length }}</td> 
       <td>{{ plane.Wingspan }}</td>
-      <td>{{ plane.Minimum }}</td>
-      <td>{{ plane.Maximum }}</td>
+      <td>{{ plane.Wing }}</td>
       <td>{{ plane.debut }}</td>
     </tr>
   {% endfor %}
