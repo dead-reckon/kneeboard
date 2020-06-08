@@ -10,7 +10,7 @@ title: Speed Table
   <thead class="thead-dark">
     <tr>
       <th data-sortable="true" data-field="plane">Plane</th>
-      <th data-sortable="true" data-field="PriorityType"  data-toggle="tooltip" data-placement="top" title="Classification of Plane">Type</th>
+      <th data-sortable="true" data-field="PriorityType" data-toggle="tooltip" data-placement="top" title="Classification of Plane">Type</th>
       <th data-sortable="true" data-field="CruiseCAS" data-toggle="tooltip" data-placement="top" title="Economical Cruise Speed (km/h)">Cruise</th>
       <th data-sortable="true" data-field="MaxSpeed" data-placement="top" title="Recommended Max Speed (km/h)">MaxSpeed</th>
       <th data-sortable="true" data-field="DiveCAS" data-placement="top" title="Recommended Max Dive Speed (km/h)">Dive</th>
@@ -21,11 +21,11 @@ title: Speed Table
   {% for plane in site.data.ai %}
     <tr>
       <th>{{ plane.name }}</th>
-      <td>{{ plane.PriorityType }}</td> 
-      <td>{{ plane.CruiseCAS }}</td>
-      <td>{{ plane.MaxSpeed }}</td>
-      <td>{{ plane.DiveCAS }}</td>
-      <td>{{ plane.TurnRate }}</td>
+      <td data-toggle="tooltip" data-placement="top" title="Classification of Plane">{{ plane.PriorityType }}</td> 
+      <td data-toggle="tooltip" data-placement="top" title="Economical Cruise Speed (km/h)">{{ plane.CruiseCAS }}</td>
+      <td data-placement="top" title="Recommended Max Speed (km/h)">{{ plane.MaxSpeed }}</td>
+      <td data-placement="top" title="Recommended Max Dive Speed (km/h)">{{ plane.DiveCAS }}</td>
+      <td data-placement="top" title="Turn Rate in (speed km/h, seconds)">{{ plane.TurnRate }}</td>
     </tr>
   {% endfor %}
   </tbody>
