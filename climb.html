@@ -1,0 +1,32 @@
+---
+layout: default
+title: Climb Table
+---
+<div>
+<h2 class="text-center">Climb Table</h2>
+<p>This tables data was pulled from IL2 game content.  The data appears to be limitations and "ideal" speeds used by the AI planes in game.  At best this is a good starting point for what some ideal limits would be for the planes.</p>
+</div>
+<table data-toggle="table">
+  <thead class="thead-dark">
+    <tr>
+      <th data-sortable="true" data-field="plane">Plane</th>
+      <th data-sortable="true" data-field="PriorityType" data-toggle="tooltip" data-placement="top" title="Classification of Plane">Type</th>
+      <th data-sortable="true" data-field="MaxClimbRate" data-toggle="tooltip" data-placement="top" title="Max Economical climb rate (m/s)">ClimbRate</th>
+      <th data-sortable="true" data-field="ClimbCAS" data-toggle="tooltip" data-placement="top" title="Close to Max Climb Rate, bleeds execess energy (km/h)">CombatClimb</th>
+      <th data-sortable="true" data-field="MaxClimbCAS" data-toggle="tooltip" data-placement="top" title="Ideal Economical Climb Rate, conserve enrgy (km/h)">IdealClimb</th>
+      <th data-sortable="true" data-field="ServiceCeiling" data-toggle="tooltip" data-placement="top" title="Service Ceiling, very poor performance when approaching this point (m)">Ceiling</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for plane in site.data.ai %}
+    <tr>
+      <th>{{ plane.name }}</th>
+      <td>{{ plane.PriorityType }}</td>
+      <td>{{ plane.MaxClimbRate }}</td> 
+      <td>{{ plane.ClimbCAS }}</td> 
+      <td>{{ plane.MaxClimbCAS }}</td>
+      <td>{{ plane.ServiceCeiling }}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>

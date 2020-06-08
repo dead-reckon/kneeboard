@@ -7,7 +7,7 @@ title: Kneeboard IL2
     <h5>Flying Circus Planes</h5>
     <ol>
 {% for plane in site.data.info %}
-{% if plane.circus == 1 %}
+{% if plane.circus == 0 %}
 
       <li>{{plane.name}}</li>
 
@@ -19,7 +19,7 @@ title: Kneeboard IL2
     <h5>WWII Era Planes</h5>
     <ol>
 {% for plane in site.data.info %}
-{% if plane.circus == 0 %}
+{% if plane.circus == 1 %}
 
       <li>{{plane.name}}</li>
 
