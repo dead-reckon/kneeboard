@@ -18,16 +18,18 @@ title: CT
     </div>
 
     <div class="row container">
-    <div class="col-sm">
+    
         {% for plane in site.data.ct %}
             {% if plane.circus == 0 %}
+            <div class="col-md-3">
             <div class="form-check">
                 <input class="form-check-input" type="checkbox" id="{{ plane.id }}" onclick="clicked()"><label class="form-check-label" for="{{ plane.id }}"> {{ plane.name }}</label>
             </div>
+            </div>
             {% endif %}
         {% endfor %}
-    </div><hr>
-     <div class="row container">
+    <hr>
+     <div class="row container justify-content-md-center">
          <div class="col-sm">
             <em>**All values are taken from in game AI limitations which means player controlled planes could perform outside of the ranges specified.**</em>
         </div>
