@@ -62,8 +62,8 @@ if (document.getElementById('{{ plane.id }}').checked) {
     label: '{{ plane.name }}',
     fill: false,
     data: [{{ plane.spd }}],
-    backgroundColor: 'Black',
-    borderColor: 'Crimson',
+    backgroundColor: '{{ plane.bgc }}',
+    borderColor: '{{ plane.bc }}',
     borderWidth: 2}); }
     {% endif %}
 {% endfor %}
