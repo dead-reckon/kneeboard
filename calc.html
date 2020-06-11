@@ -1,0 +1,42 @@
+---
+layout: default
+title: Kneeboard IL2
+---
+<div class="row justify-content-sm-center">
+  <div class="col col-sm-5">
+    <div class="form-group">
+      <label for="FormControlSelect1"><h4>Select Plane</h4></label>
+      <select class="form-control" id="FormControlSelect1">
+        {% for plane in site.data.info %}
+        <option>{{ plane.id }}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <div class="col col-sm">
+      <div class="card">
+        <div class="card-header">
+          <h5>Flight Time</h5>
+        </div>
+        <div class="card-body">
+            <div class="card-body">
+              <div class="form-group row">
+                Fuel:<input class="form-control" type="text" placeholder="Fuel in Liters">
+                Flight Time:<input class="form-control" type="text" placeholder="Flight Time in Hours" readonly>
+              </div>
+              <p><button type="button" class="btn btn-secondary">Calculate</button></p>
+            </div>         
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<footer class="footer">
+  <div class="container">
+    <div class="row justify-content-sm-center">
+      <div class="col col-lg-7">
+        <span class="text-muted">All Images and Data courtesy of <a href="https://il2sturmovik.com/">1C Studios, IL2 Sturmovik and their Great Battles series</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
