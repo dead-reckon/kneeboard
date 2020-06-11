@@ -56,7 +56,7 @@ var myChart = new Chart(ctx, {
 function clicked() {
         master_dataset.length = 0;
 {% for plane in site.data.ct %}
-    {% if plane.circus == 0 %}
+    // {% if plane.circus == 0 %}
 if (document.getElementById('{{ plane.id }}').checked) {
     master_dataset.push({
     label: '{{ plane.name }}',
@@ -65,7 +65,7 @@ if (document.getElementById('{{ plane.id }}').checked) {
     backgroundColor: '{{ plane.bgc }}',
     borderColor: '{{ plane.bc }}',
     borderWidth: 2}); }
-    {% endif %}
+    // {% endif %}
 {% endfor %}
 
     myChart.update();
