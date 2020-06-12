@@ -2,38 +2,60 @@
 layout: default
 title: Kneeboard IL2
 ---
-<div class="row justify-content-sm-center">
-    <div class="col col-sm-5">
-      <div class="card">
-        <div class="card-header">
+
+<SCRIPT LANGUAGE="JavaScript">
+function testResults (form) {
+    var fuel = form.inputbox.value;
+    var plane = form.plane.value;
+    alert ("Fuel Capacity: " + fuel + " Plane: " + plane);
+}
+</SCRIPT>
+
+<DIV CLASS="row justify-content-sm-center">
+    <DIV CLASS="col col-sm-5">
+      <DIV CLASS="card">
+        <DIV CLASS="card-header">
           <h4>Fuel Calculator</h4>
-        </div>
-        <div class="card-body">
-          <forum class="form-group">
+        </DIV>
+        <DIV CLASS="card-body">
+          <FORM NAME="myform" ACTION="" METHOD="GET">Fuel Capacity:<BR>
+            <select class="form-control" id="FormControlSelect1" NAME="plane" VALUE="">
+              {% for plane in site.data.info %}
+                {% if plane.circus == 0 %}
+                <option id="{{ plane.id }}">{{ plane.id }}</option>
+                {% endif %}
+              {% endfor %}
+            </select>
+            <INPUT CLASS="form-control" TYPE="number" NAME="inputbox" VALUE="">
+            <HR>
+            <INPUT CLASS="btn btn-secondary" TYPE="button" NAME="button" Value="Calculate" onClick="testResults(this.form)">
+            <HR>
+          </FORM>
+          <!-- <forum class="form-group" name="myform" action="" method="GET">
             <label for="FormControlSelect1"><h5>Select Plane</h5></label>
             <select class="form-control" id="FormControlSelect1">
               {% for plane in site.data.info %}
               <option id="{{ plane.id }}">{{ plane.name }}</option>
               {% endfor %}
             </select>
-            <h5>Fuel:</h5><input class="form-control" type="number" placeholder="Fuel in Liters">
+            <h5>Fuel:</h5><input class="form-control" type="text" placeholder="Fuel in Liters" name="inputbox">
             <hr>
-            <button type="button" class="btn btn-secondary">Calculate</button><hr>
+            <button class="btn btn-secondary" type="button" name="button" value="Click" onClick="testResults(this.form)">Calculate</button><hr>
             <strong>Flight Time:</strong><input class="form-control" type="text" placeholder="Flight Time in Hours" readonly>
             <strong>Distance:</strong><input class="form-control" type="text" placeholder="Distance in km" readonly>
             <strong>Grid Distance:</strong><input class="form-control" type="text" placeholder="Distance in Grid Squares" readonly>
-          </forum>
-        </div>         
-      </div>
-    </div>
-</div>
-<br>
-<footer class="footer">
-  <div class="container">
-    <div class="row justify-content-sm-center">
-      <div class="col col-lg-7">
-        <span class="text-muted">All Images and Data courtesy of <a href="https://il2sturmovik.com/">1C Studios, IL2 Sturmovik and their Great Battles series</a></span>
-      </div>
-    </div>
-  </div>
-</footer>
+          </forum> -->
+        </DIV>         
+      </DIV>
+    </DIV>
+</DIV>
+<BR>
+<FOOTER CLASS="footer">
+  <DIV CLASS="container">
+    <DIV CLASS="row justify-content-sm-center">
+      <DIV CLASS="col col-lg-7">
+        <SPAN CLASS="text-muted">All Images and Data courtesy of <a href="https://il2sturmovik.com/">1C Studios</a></SPAN>
+      </DIV>
+    </DIV>
+  </DIV>
+</FOOTER>
