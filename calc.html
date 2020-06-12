@@ -51,14 +51,13 @@ function fuelCalc (form)
             <select class="form-control" id="FormControlSelect1" NAME="plane" VALUE="">
               {% for plane in site.data.stats %}
                 {% if plane.circus == 0 %}
-                <option value="{{ plane.id }}">{{ plane.name }}</option>
+                <option value="{{ plane.id }}">{{ plane.name }} (Capacity: {{ plane.Fuel }} L)</option>
                 {% endif %}
               {% endfor %}
             </select>
             <strong>Fuel Load in liters:</strong>
-            <INPUT CLASS="form-control" TYPE="number" NAME="inputbox" VALUE="">
-            <HR>
-            <INPUT CLASS="btn btn-secondary  btn-block" TYPE="button" NAME="button" Value="Calculate" onClick="fuelCalc(this.form)">
+            <INPUT CLASS="form-control" TYPE="number" NAME="inputbox" VALUE=""><br>
+            <INPUT CLASS="btn btn-secondary btn-block" TYPE="button" NAME="button" Value="Calculate" onClick="fuelCalc(this.form)">
             <HR>
             <strong>Flight Time Remaining:</strong><input class="form-control" type="text" placeholder="Flight Time in Minutes" NAME="flightTime" VALUE="" readonly>
             <strong>Flight Distance Remaining:</strong><input class="form-control" type="text" placeholder="Flight Distance in Kilometers" NAME="flightDist" VALUE="" readonly>
