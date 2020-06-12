@@ -3,30 +3,29 @@ layout: default
 title: Kneeboard IL2
 ---
 <div class="row justify-content-sm-center">
-  <div class="col col-sm-5">
-    <div class="form-group">
-      <label for="FormControlSelect1"><h4>Select Plane</h4></label>
-      <select class="form-control" id="FormControlSelect1">
-        {% for plane in site.data.info %}
-        <option>{{ plane.id }}</option>
-        {% endfor %}
-      </select>
-    </div>
-    <div class="col col-sm">
+    <div class="col col-sm-5">
       <div class="card">
         <div class="card-header">
-          <h5>Flight Time</h5>
+          <h4>Fuel Calculator</h4>
         </div>
         <div class="card-body">
-          <div class="form-group row">
-            Fuel:<input class="form-control" type="text" placeholder="Fuel in Liters">
-            Flight Time:<input class="form-control" type="text" placeholder="Flight Time in Hours" readonly>
-          </div>
-          <p><button type="button" class="btn btn-secondary">Calculate</button></p>
+          <forum class="form-group">
+            <label for="FormControlSelect1"><h5>Select Plane</h5></label>
+            <select class="form-control" id="FormControlSelect1">
+              {% for plane in site.data.info %}
+              <option id="{{ plane.id }}">{{ plane.name }}</option>
+              {% endfor %}
+            </select>
+            <h5>Fuel:</h5><input class="form-control" type="number" placeholder="Fuel in Liters">
+            <hr>
+            <button type="button" class="btn btn-secondary">Calculate</button><hr>
+            <strong>Flight Time:</strong><input class="form-control" type="text" placeholder="Flight Time in Hours" readonly>
+            <strong>Distance:</strong><input class="form-control" type="text" placeholder="Distance in km" readonly>
+            <strong>Grid Distance:</strong><input class="form-control" type="text" placeholder="Distance in Grid Squares" readonly>
+          </forum>
         </div>         
       </div>
     </div>
-  </div>
 </div>
 <br>
 <footer class="footer">
