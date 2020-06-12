@@ -4,11 +4,40 @@ title: Kneeboard IL2
 ---
 
 <SCRIPT LANGUAGE="JavaScript">
-function testResults (form) {
+// function writeText (form) 
+// {
+//     form.inputbox.value = "Have a nice day!"
+// }
+
+function fuelCalc (form) 
+{
     var fuel = form.inputbox.value;
     var plane = form.plane.value;
-    alert ("Fuel Capacity: " + fuel + " Plane: " + plane);
+
+    let planes;
+    switch(plane) 
+    {
+    {% for plane in site.data.stats %}
+      {% if plane.circus == 0 %}
+      case "{{ plane.id }}":
+
+        flight_distance = Math.floor((({{ plane.fuel_maxrange }}/{{ plane.Fuel }})*fuel));
+        flight_grid = Math.floor((({{ plane.fuel_maxrange }}/{{ plane.Fuel }})*fuel)/10);
+        flight_time = Math.floor(1/(({{ plane.fuel_lph }}/60)/fuel));
+        form.flightTime.value = flight_time + " minutes";
+        form.flightDist.value = flight_distance + " km";
+        form.flightGrid.value = Math.floor(flight_distance/10) + " grid squares";
+        break;
+    
+      {% endif %}
+    {% endfor %}
+      default:
+        {};
+    }
+    // let {{ plane.id }} = ['{{ plane.Fuel }}','{{ plane.fuel_lph }}','{{ plane.fuel_h }}','{{ plane.fuel_kmph }}','{{ plane.fuel_maxrange }}']
 }
+
+
 </SCRIPT>
 
 <DIV CLASS="row justify-content-sm-center">
@@ -18,33 +47,23 @@ function testResults (form) {
           <h4>Fuel Calculator</h4>
         </DIV>
         <DIV CLASS="card-body">
-          <FORM NAME="myform" ACTION="" METHOD="GET">Fuel Capacity:<BR>
+          <FORM NAME="myform" ACTION="" METHOD="GET"><strong>Plane:</strong><BR>
             <select class="form-control" id="FormControlSelect1" NAME="plane" VALUE="">
-              {% for plane in site.data.info %}
+              {% for plane in site.data.stats %}
                 {% if plane.circus == 0 %}
-                <option id="{{ plane.id }}">{{ plane.id }}</option>
+                <option value="{{ plane.id }}">{{ plane.name }}</option>
                 {% endif %}
               {% endfor %}
             </select>
+            <strong>Fuel Load in liters:</strong>
             <INPUT CLASS="form-control" TYPE="number" NAME="inputbox" VALUE="">
             <HR>
-            <INPUT CLASS="btn btn-secondary" TYPE="button" NAME="button" Value="Calculate" onClick="testResults(this.form)">
+            <INPUT CLASS="btn btn-secondary  btn-block" TYPE="button" NAME="button" Value="Calculate" onClick="fuelCalc(this.form)">
             <HR>
+            <strong>Flight Time Remaining:</strong><input class="form-control" type="text" placeholder="Flight Time in Minutes" NAME="flightTime" VALUE="" readonly>
+            <strong>Flight Distance Remaining:</strong><input class="form-control" type="text" placeholder="Flight Distance in Kilometers" NAME="flightDist" VALUE="" readonly>
+            <strong>Flight Grid Squares Remaining:</strong><input class="form-control" type="text" placeholder="Flight Distance in map grid squares" NAME="flightGrid" VALUE="" readonly>
           </FORM>
-          <!-- <forum class="form-group" name="myform" action="" method="GET">
-            <label for="FormControlSelect1"><h5>Select Plane</h5></label>
-            <select class="form-control" id="FormControlSelect1">
-              {% for plane in site.data.info %}
-              <option id="{{ plane.id }}">{{ plane.name }}</option>
-              {% endfor %}
-            </select>
-            <h5>Fuel:</h5><input class="form-control" type="text" placeholder="Fuel in Liters" name="inputbox">
-            <hr>
-            <button class="btn btn-secondary" type="button" name="button" value="Click" onClick="testResults(this.form)">Calculate</button><hr>
-            <strong>Flight Time:</strong><input class="form-control" type="text" placeholder="Flight Time in Hours" readonly>
-            <strong>Distance:</strong><input class="form-control" type="text" placeholder="Distance in km" readonly>
-            <strong>Grid Distance:</strong><input class="form-control" type="text" placeholder="Distance in Grid Squares" readonly>
-          </forum> -->
         </DIV>         
       </DIV>
     </DIV>
