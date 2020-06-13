@@ -26,10 +26,10 @@ function kph (form)
   console.log(test);
   if ( test === "1" )
   {
-    form.kphout.value = Math.floor(inpt/1.609) + " mph";
+    form.kphout.value = Math.floor(inpt*1.609) + " kph";
   } else 
   {
-    form.kphout.value = Math.floor(inpt*1.609) + " kph";
+    form.kphout.value = Math.floor(inpt/1.609) + " mph";
   }
   
 }
