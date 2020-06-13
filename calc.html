@@ -110,7 +110,7 @@ function fuelCalc (form)
             <select class="form-control" id="FormControlSelect1" NAME="plane" VALUE="">
               {% for plane in site.data.stats %}
                 {% if plane.circus == 0 %}
-                <option value="{{ plane.id }}">{{ plane.name }} (Capacity: {{ plane.Fuel }} L)</option>
+                <option value="{{ plane.id }}">{{ plane.name }}</option>
                 {% endif %}
               {% endfor %}
             </select>
