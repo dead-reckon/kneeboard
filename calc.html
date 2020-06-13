@@ -4,10 +4,35 @@ title: Fuel Calculator
 ---
 
 <SCRIPT LANGUAGE="JavaScript">
-// function writeText (form) 
-// {
-//     form.inputbox.value = "Have a nice day!"
-// }
+function test (form) 
+{
+  var test = form.meterMile.value;
+  var inpt = form.inputbox.value;
+  console.log(test);
+  if ( test === "1" )
+  {
+    form.mout.value = Math.floor(inpt/3.281) + " Meters";
+  } else 
+  {
+    form.mout.value = Math.floor(inpt*3.281) + " Feet";
+  }
+  
+}
+
+function kph (form) 
+{
+  var test = form.kphconv.value;
+  var inpt = form.kphin.value;
+  console.log(test);
+  if ( test === "1" )
+  {
+    form.kphout.value = Math.floor(inpt/1.609) + " mph";
+  } else 
+  {
+    form.kphout.value = Math.floor(inpt*1.609) + " kph";
+  }
+  
+}
 
 function fuelCalc (form) 
 {
@@ -68,6 +93,47 @@ function fuelCalc (form)
             <strong>Flight Grid Squares Remaining:</strong><input class="form-control" type="text" placeholder="Distance in map grid squares" NAME="flightGrid" VALUE="" readonly><hr>
             <strong>Assumed Cruise Speed:</strong><input class="form-control" type="text" placeholder="Speed in kph (mph)" NAME="flightSpeed" VALUE="" readonly>
             <strong>Tank Capacity:</strong><input class="form-control" type="text" placeholder="Percent Full | Current/Max" NAME="flightTank" VALUE="" readonly>
+          </FORM>
+        </DIV>         
+      </DIV><br>
+      <DIV CLASS="card">
+        <DIV CLASS="card-header">
+          <h4>Conversion</h4>
+        </DIV>
+        <DIV CLASS="card-body">
+          <FORM NAME="myform" ACTION="" METHOD="GET"><strong></strong>
+            <div class="row">
+              <div class="col">
+                <INPUT CLASS="form-control form-control-sm" TYPE="number" NAME="inputbox" VALUE="">
+              </div>
+              <div class="col">
+                <input class="form-control form-control-sm" type="text" placeholder="" NAME="mout" VALUE="" readonly>
+              </div>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="meterMile" id="inlineRadio1" value="0" onClick="test(this.form)">
+              <label class="form-check-label" for="inlineRadio1">Meters</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="meterMile" id="inlineRadio2" value="1" onClick="test(this.form)">
+              <label class="form-check-label" for="inlineRadio2">Feet</label>
+            </div><hr>
+            <div class="row">
+              <div class="col">
+                <INPUT CLASS="form-control form-control-sm" TYPE="number" NAME="kphin" VALUE="">
+              </div>
+              <div class="col">
+                <input class="form-control form-control-sm" type="text" placeholder="" NAME="kphout" VALUE="" readonly>
+              </div>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="kphconv" id="inlineRadio1" value="0" onClick="kph(this.form)">
+              <label class="form-check-label" for="inlineRadio1">kph</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="kphconv" id="inlineRadio2" value="1" onClick="kph(this.form)">
+              <label class="form-check-label" for="inlineRadio2">mph</label>
+            </div>
           </FORM>
         </DIV>         
       </DIV>

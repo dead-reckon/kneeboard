@@ -1,0 +1,8 @@
+
+
+.full-img {
+    background-image: url("assets/vintage.jpg");
+    background-position: center;
+    /*background-repeat: no-repeat;*/
+    background-size: cover;
+}
