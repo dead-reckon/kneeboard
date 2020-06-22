@@ -20,7 +20,7 @@ function slide (form)
         flight_distance = Math.floor((({{ plane.fuel_maxrange }}/{{ plane.Fuel }})*fuel));
         flight_grid = Math.floor((({{ plane.fuel_maxrange }}/{{ plane.Fuel }})*fuel)/10);
         flight_time = Math.floor(1/(({{ plane.fuel_lph }}/60)/fuel));
-        flight_tank = Math.floor(fuel/{{ plane.Fuel }}*100)
+        flight_tank = Math.ceil(fuel/{{ plane.Fuel }}*100)
 
         form.flightSpeed.value = {{ plane.fuel_kmph }} + " kph (" + Math.floor( 0.62137119223733 * {{ plane.fuel_kmph }}) + " mph)" ;
         form.flightTime.value = flight_time + " minutes";
@@ -69,6 +69,7 @@ function kph (form)
 function fuelCalc (form) 
 {
     var fuel = form.inputbox.value;
+    // var fuel = Math.ceil(rawfuel*5)
     var plane = form.plane.value;
     switch(plane) 
     {
@@ -85,7 +86,7 @@ function fuelCalc (form)
         form.flightTime.value = flight_time + " minutes";
         form.flightDist.value = flight_distance + " km";
         form.flightGrid.value = Math.floor(flight_distance/10) + " grid squares";
-        form.flightTank.value = flight_tank + "% | " + fuel + " of {{ plane.Fuel }} Liters ";
+        form.flightTank.value = "fuel" + "% | " + fuel + " of {{ plane.Fuel }} Liters ";
         break;
     
       {% endif %}
@@ -107,17 +108,17 @@ function fuelCalc (form)
         </DIV>
         <DIV CLASS="card-body">
           <FORM NAME="myform" ACTION="" METHOD="GET"><strong>Plane:</strong><BR>
-            <select class="form-control" id="FormControlSelect1" NAME="plane" VALUE="">
+            <select class="form-control" id="FormControlSelect1" NAME="plane" VALUE="" onChange="slide(this.form)">
               {% for plane in site.data.stats %}
                 {% if plane.circus == 0 %}
-                <option value="{{ plane.id }}">{{ plane.name }}</option>
+                <option value="{{ plane.id }}" >{{ plane.name }}</option>
                 {% endif %}
               {% endfor %}
             </select>
             <strong>Fuel Load:</strong>
             <div class="form-group">
               <!-- <label for="formControlRange">Example Range input</label> -->
-              <input type="range" class="form-control-range" id="formControlRange" NAME="slider" Value="" onChange="slide(this.form)">
+              <input type="range" class="form-control-range" id="formControlRange" NAME="slider" Value="" step="5" onChange="slide(this.form)">
             </div>
             <strong>Tank Capacity:</strong><input class="form-control" type="text" placeholder="Percent Full | Current/Max" NAME="flightTank" VALUE="" readonly>
            <!--  <INPUT CLASS="form-control" TYPE="number" NAME="inputbox" VALUE=""><br>
